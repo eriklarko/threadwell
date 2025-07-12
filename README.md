@@ -50,17 +50,17 @@ Threadwell is a React Native mobile app that transforms the audiobook listening 
 threadwell/
 ├── 📱 app/                    # React Native application
 ├── 📚 assets/                 # Book content (downloaded separately)
-│   └── books/
-│       └── alice-in-wonderland/
-│           ├── text/          # Project Gutenberg text
-│           ├── audio/         # LibriVox MP3 files (154MB)
-│           └── supplementary/ # Metadata & analysis
+│   ├── books/
+│   │   └── alice-in-wonderland/
+│   │       ├── text/          # Project Gutenberg text
+│   │       ├── audio/         # LibriVox MP3 files (154MB)
+│   │       └── supplementary/ # Metadata & analysis
+│   └── scripts/               # Asset management tools
+│       ├── download-assets.sh     # Get all book content
+│       └── verify-assets.sh       # Check asset quality
 ├── 📖 docs/                   # Project documentation & planning
 │   ├── Project_Scope.md       # What we're building
 │   └── epic-*/                # Development phases
-└── 🔧 scripts/               # Asset management tools
-    ├── download-assets.sh     # Get all book content
-    └── verify-assets.sh       # Check asset quality
 ```
 
 ## 📚 Content
