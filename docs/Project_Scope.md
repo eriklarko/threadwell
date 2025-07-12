@@ -11,6 +11,7 @@ Think of it as a smart audiobook player that helps you keep track of everything 
 Threadwell is more than just a play button. It gives you special controls to explore the story in new ways:
 
 *   **Smart Rewind:** Did you miss something? Instantly jump back to the beginning of the last paragraph to catch up.
+*   **Smart Forward:** Already heard this? Skip to the next paragraph.
 *   **Scene Rewind:** Want to remember how the characters got to a specific location? Rewind to the start of their journey in the current scene.
 *   **Who's Here?:** Instantly see a list of all the characters present in the scene you're listening to.
 *   **Character Dossier:** Get a quick summary of what a character looks like or review a complete history of everything they've done in the story so far.
