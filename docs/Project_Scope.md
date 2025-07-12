@@ -23,3 +23,11 @@ This app is for every audiobook listener who has ever wished for more from their
 ## What will it be built with?
 
 Threadwell will be a mobile app for both iPhone and Android, built using React Native.
+
+### App architecture
+
+The app is designed to be kind of dumb - or a presentation layer to rich data. We'll have a bunch of models on the backend analyzing the books and generating data that the app will use for its features.
+
+While developing the app we will use stubbed data files, likely json for the smart rewind, How's here and Dossier features.
+
+The AMA feature will require some sort of direct LLM call, but we can assume that's a black box for now.

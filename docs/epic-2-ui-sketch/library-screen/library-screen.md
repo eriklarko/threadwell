@@ -25,7 +25,7 @@ Displays a user's collection of audiobooks, allowing them to browse and select a
 
 ## Library Display and Interaction
 
-*   **Default View:** A visually appealing list layout displaying audiobook cover art. Each item should be visually striking and inviting, allowing each book to shine.
+*   **Default View:** A visually appealing list layout displaying audiobook cover art. Each item should be visually striking and inviting, allowing each book to shine. Tapping a book in this view will take the user directly to the Now Playing screen.
 *   **Alternative View:** An option to switch to a detailed list view, providing more detailed information at a glance (e.g., author, narrator(s), duration, progress, genre).
 *   **Filtering & Sorting:** Prominent and intuitive controls for:
     *   **Filtering:** By Genre, Author, Narrator, Series, Progress Status, Tags.
