@@ -12,6 +12,7 @@ Threadwell is more than just a play button. It gives you special controls to exp
 
 *   **Smart Rewind:** Did you miss something? Instantly jump back to the beginning of the last paragraph to catch up.
 *   **Smart Forward:** Already heard this? Skip to the next paragraph.
+
 *   **Scene Rewind:** Want to remember how the characters got to a specific location? Rewind to the start of their journey in the current scene.
 *   **Who's Here?:** Instantly see a list of all the characters present in the scene you're listening to.
 *   **Character Dossier:** Get a quick summary of what a character looks like or review a complete history of everything they've done in the story so far.
@@ -32,3 +33,5 @@ The app is designed to be kind of dumb - or a presentation layer to rich data. W
 While developing the app we will use stubbed data files, likely json for the smart rewind, How's here and Dossier features.
 
 The AMA feature will require some sort of direct LLM call, but we can assume that's a black box for now.
+
+See docs/architecture
