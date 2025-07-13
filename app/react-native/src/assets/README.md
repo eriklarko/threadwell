@@ -1,0 +1,1 @@
+This folder contains the cover art for our test book. This is just temporary and not the final solution. The cover art will come from some data store somewhere

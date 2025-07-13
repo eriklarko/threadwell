@@ -1,4 +1,10 @@
-# Erik’s Copilot Style Guide
+# Erik’s Co## ✅ Structure & Tests
+- **Write tests first** — they shape better code and clarify intent.
+- **Place test files next to the files they test**.
+- **Render components in each test** — avoid beforeEach hooks for rendering, render the component explicitly in each test for clarity.
+- Don't write components that merely wrap other components — avoid unnecessary abstraction.
+- **Avoid deprecated code** — use up-to-date APIs, libraries, and practices.
+- **Always use the design system** - don't define colors and spacing over and over.Style Guide
 
 ## ✳️ Functions & Variables
 - Use clear, descriptive names — prioritize clarity over brevity.
@@ -15,6 +21,7 @@
 - Don’t write components that merely wrap other components — avoid unnecessary abstraction.
 - **Avoid deprecated code** — use up-to-date APIs, libraries, and practices.
 - **Always use the design system** - don't define colors and spacing over and over.
+- **Avoid beforeEach**
 
 ## 🛠️ Tooling & Workflow
 - NEVER ADD DEPENDENCIES YOURSELF, ALWAYS LET ME DO IT.
@@ -25,6 +32,7 @@
 - **When build or linter warnings appear:**
   &nbsp;  • Apply quick, obvious fixes automatically.
   &nbsp;  • If the fix is non-trivial or might change behavior, **pause and ask Erik whether the warning is important enough to address** before continuing.
+- **use testing-library for tests**
 
 ## 🧭 When Building New Features
 - **Start with research**: Look at how the broader community builds similar features using modern, reliable tools and libraries.
