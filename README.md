@@ -74,8 +74,8 @@ threadwell/
 ## 🎯 Development Roadmap
 
 - [x] **Epic 1**: Content selection and asset download ✅
-- [ ] **Epic 2**: UI/UX design and mockups
-- [ ] **Epic 3**: Basic React Native app structure
+- [x] **Epic 2**: UI/UX design and mockups
+- [x] **Epic 3**: Basic React Native app structure
 - [ ] **Epic 4**: Simple audio playback controls
 - [ ] **Epic 5**: Text-audio synchronization
 - [ ] **Epic 6**: Smart navigation features
