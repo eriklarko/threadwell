@@ -1,42 +1,69 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { spacing, colors, typography } from '../design-system';
-import { UseAudioPlayerReturn } from './useAudioPlayer';
+// TODO: Ports and adapters please :cry:
+import { AudioProState, AudioProTrack, useAudioPro } from 'react-native-audio-pro';
+import { AudioPro } from 'react-native-audio-pro';
 
 interface AudioControlsProps {
-  audioPlayer: UseAudioPlayerReturn;
+  track: AudioProTrack;
 }
 
 /**
  * Basic audio controls component with play/pause functionality
  */
-export function AudioControls({ audioPlayer }: AudioControlsProps) {
-  const { state, controls } = audioPlayer;
+export function AudioControls({ track }: AudioControlsProps) {
 
-  if (state.isLoading) {
-    return (
-      <View style={styles.container} testID="audio-controls-loading">
-        <ActivityIndicator size="large" color={colors.accent} />
-        <Text style={styles.loadingText}>Loading audio...</Text>
-      </View>
-    );
+  useEffect(() => {
+    // Ensure the track is loaded when the component mounts
+    AudioPro.play(track, { autoPlay: false });
+  }, [track]);
+
+  // TODO: when I make my own hook, return the controls as well
+  const { state } = useAudioPro();
+  const controls = {
+    togglePlayback: async () => {
+      if (state === AudioProState.PLAYING) {
+        await AudioPro.pause();
+      } else if (state === AudioProState.PAUSED) {
+        // If paused and we don't need to load a new track, resume
+        AudioPro.resume();
+      } else {
+        await AudioPro.play(track);
+      }
+    }
   }
 
-  return (
-    <View style={styles.container} testID="audio-controls">
-      <TouchableOpacity
-        style={[styles.playButton, state.isPlaying && styles.playButtonActive]}
-        onPress={controls.togglePlayback}
-        testID="play-pause-button"
-        accessibilityLabel={state.isPlaying ? 'Pause' : 'Play'}
-        accessibilityRole="button"
-      >
-        <Text style={styles.playButtonText}>
-          {state.isPlaying ? '⏸️' : '▶️'}
-        </Text>
-      </TouchableOpacity>
-    </View>
-  );
+  switch (state) {
+    case AudioProState.IDLE:
+      return <Text style={styles.statusText}>No track loaded</Text>;
+    case AudioProState.LOADING:
+      return <ActivityIndicator size="large" color={colors.surface} style={styles.loadingText} />;
+    case AudioProState.PLAYING:
+    case AudioProState.PAUSED:
+      const isPlaying = state === AudioProState.PLAYING;
+      return (
+        <View style={styles.container} testID="audio-controls">
+          <TouchableOpacity
+            style={[styles.playButton, isPlaying && styles.playButtonActive]}
+            onPress={controls.togglePlayback}
+            testID="play-pause-button"
+            accessibilityLabel={isPlaying ? 'Pause' : 'Play'}
+            accessibilityRole="button"
+          >
+            <Text style={styles.playButtonText}>
+              {isPlaying ? '⏸️' : '▶️'}
+            </Text>
+          </TouchableOpacity>
+        </View>
+      );
+    case AudioProState.STOPPED:
+      return <Text style={styles.statusText}>Stopped</Text>;
+    case AudioProState.ERROR:
+      return <Text style={styles.statusText}>Error occurred</Text>;
+    default:
+      return <Text style={styles.statusText}>Unknown state</Text>;
+    }
 }
 
 const styles = StyleSheet.create({

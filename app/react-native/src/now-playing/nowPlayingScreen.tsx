@@ -1,24 +1,9 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
 import { spacing, colors, typography, borderRadius } from '../design-system';
-import { useAudioPlayer, AudioTrack } from './useAudioPlayer';
 import { AudioControls } from './AudioControls';
 
-// Mock audio track data - will be replaced with real data later
-const mockAudioTrack: AudioTrack = {
-  id: 'alice-chapter-01',
-  url: '../assets/audio/chapter-01.mp3', // Local audio file for testing
-  title: "Alice's Adventures in Wonderland - Chapter 1",
-  artist: 'Lewis Carroll',
-  artwork: '../assets/images/alice-cover.jpg',
-};
-
-/**
- * Step 2: Basic audio player with play/pause functionality
- * Displays the essential book information and basic audio controls
- */
 export function NowPlayingScreen() {
-  const audioPlayer = useAudioPlayer(mockAudioTrack);
   return (
     <SafeAreaView style={styles.container} testID="now-playing-screen">
       <View style={styles.header} testID="now-playing-header">
@@ -41,7 +26,14 @@ export function NowPlayingScreen() {
           Lewis Carroll
         </Text>
 
-        <AudioControls audioPlayer={audioPlayer} />
+        <AudioControls track={{
+          id: 'alice-chapter-01',
+          //url: '../assets/audio/chapter-01.mp3', // Local audio file for testing
+          url: 'https://rnap.dev/audio-soundhelix-song-1-tschurger.mp3',
+          title: "Alice's Adventures in Wonderland - Chapter 1",
+          artist: 'Lewis Carroll',
+          artwork: '../assets/images/alice-cover.jpg',
+        }}/>
       </View>
     </SafeAreaView>
   );

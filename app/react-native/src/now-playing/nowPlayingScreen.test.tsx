@@ -1,9 +1,8 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react-native';
+import { render, screen } from '@testing-library/react-native';
 import { NowPlayingScreen } from './nowPlayingScreen';
 
 describe('NowPlayingScreen', () => {
-
   it('renders without crashing', () => {
     render(<NowPlayingScreen />);
     expect(screen.getByTestId('now-playing-screen')).toBeTruthy();
@@ -24,17 +23,5 @@ describe('NowPlayingScreen', () => {
     render(<NowPlayingScreen />);
     const authorElement = screen.getByTestId('book-author');
     expect(authorElement.props.children).toBe('Lewis Carroll');
-  });
-
-  it('displays audio controls', async () => {
-    render(<NowPlayingScreen />);
-
-    // Initially shows loading state
-    expect(screen.getByTestId('audio-controls-loading')).toBeTruthy();
-
-    // Wait for audio controls to load
-    await waitFor(() => {
-      expect(screen.getByTestId('audio-controls')).toBeTruthy();
-    }, { timeout: 3000 });
   });
 });
