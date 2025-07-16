@@ -32,17 +32,39 @@ export function AudioControls({ track }: AudioControlsProps) {
       const isPlaying = state === AudioProState.PLAYING;
       return (
         <View style={styles.container} testID="audio-controls">
-          <TouchableOpacity
-            style={[styles.playButton, isPlaying && styles.playButtonActive]}
-            onPress={() => controls.togglePlayback(track)}
-            testID="play-pause-button"
-            accessibilityLabel={isPlaying ? 'Pause' : 'Play'}
-            accessibilityRole="button"
-          >
-            <Text style={styles.playButtonText}>
-              {isPlaying ? '⏸️' : '▶️'}
-            </Text>
-          </TouchableOpacity>
+          <View style={styles.controlsRow}>
+            <TouchableOpacity
+              style={styles.skipButton}
+              onPress={() => controls.skipBack(5)}
+              testID="skip-back-button"
+              accessibilityLabel="Skip back 5 seconds"
+              accessibilityRole="button"
+            >
+              <Text style={styles.skipButtonText}>⏪ 5s</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.playButton, isPlaying && styles.playButtonActive]}
+              onPress={() => controls.togglePlayback(track)}
+              testID="play-pause-button"
+              accessibilityLabel={isPlaying ? 'Pause' : 'Play'}
+              accessibilityRole="button"
+            >
+              <Text style={styles.playButtonText}>
+                {isPlaying ? '⏸️' : '▶️'}
+              </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.skipButton}
+              onPress={() => controls.skipForward(5)}
+              testID="skip-forward-button"
+              accessibilityLabel="Skip forward 5 seconds"
+              accessibilityRole="button"
+            >
+              <Text style={styles.skipButtonText}>5s ⏩</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       );
     case AudioProState.STOPPED:
@@ -58,6 +80,12 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     paddingVertical: spacing.lg,
+  },
+  controlsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: spacing.lg,
   },
   playButton: {
     // TODO: Use design system for button styles
@@ -76,6 +104,22 @@ const styles = StyleSheet.create({
   },
   playButtonText: {
     fontSize: 32,
+  },
+  skipButton: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: colors.surface,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: spacing.md,
+    borderWidth: 1,
+    borderColor: colors.text.secondary,
+  },
+  skipButtonText: {
+    fontSize: typography.sizes.small,
+    color: colors.text.primary,
+    fontWeight: typography.weights.medium,
   },
   statusText: {
     fontSize: typography.sizes.body,

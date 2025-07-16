@@ -17,6 +17,8 @@ jest.mock('react-native-audio-pro', () => ({
     play: jest.fn(),
     pause: jest.fn(),
     resume: jest.fn(),
+    seekForward: jest.fn(),
+    seekBack: jest.fn(),
   },
 }));
 
@@ -93,6 +95,58 @@ describe('useAudioPlayer', () => {
       });
 
       expect(AudioPro.play).toHaveBeenCalledWith(mockTrack);
+    });
+  });
+
+  describe('skipForward control', () => {
+    it('calls AudioPro.seekForward with default 5 seconds when no parameter provided', () => {
+      useAudioPro.mockReturnValue({ state: AudioProState.PLAYING });
+
+      const { result } = renderHook(() => useAudioPlayer());
+
+      act(() => {
+        result.current.controls.skipForward();
+      });
+
+      expect(AudioPro.seekForward).toHaveBeenCalledWith(5000); // 5 seconds in milliseconds
+    });
+
+    it('calls AudioPro.seekForward with custom seconds converted to milliseconds', () => {
+      useAudioPro.mockReturnValue({ state: AudioProState.PLAYING });
+
+      const { result } = renderHook(() => useAudioPlayer());
+
+      act(() => {
+        result.current.controls.skipForward(10);
+      });
+
+      expect(AudioPro.seekForward).toHaveBeenCalledWith(10000); // 10 seconds in milliseconds
+    });
+  });
+
+  describe('skipBack control', () => {
+    it('calls AudioPro.seekBack with default 5 seconds when no parameter provided', () => {
+      useAudioPro.mockReturnValue({ state: AudioProState.PLAYING });
+
+      const { result } = renderHook(() => useAudioPlayer());
+
+      act(() => {
+        result.current.controls.skipBack();
+      });
+
+      expect(AudioPro.seekBack).toHaveBeenCalledWith(5000); // 5 seconds in milliseconds
+    });
+
+    it('calls AudioPro.seekBack with custom seconds converted to milliseconds', () => {
+      useAudioPro.mockReturnValue({ state: AudioProState.PLAYING });
+
+      const { result } = renderHook(() => useAudioPlayer());
+
+      act(() => {
+        result.current.controls.skipBack(15);
+      });
+
+      expect(AudioPro.seekBack).toHaveBeenCalledWith(15000); // 15 seconds in milliseconds
     });
   });
 });

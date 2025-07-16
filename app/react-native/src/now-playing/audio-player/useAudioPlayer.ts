@@ -4,6 +4,8 @@ import { AudioPro } from 'react-native-audio-pro';
 
 export interface AudioPlayerControls {
   togglePlayback: (track: AudioProTrack) => Promise<void>;
+  skipForward: (seconds?: number) => void;
+  skipBack: (seconds?: number) => void;
 }
 
 export interface UseAudioPlayerReturn {
@@ -27,6 +29,12 @@ export function useAudioPlayer(): UseAudioPlayerReturn {
       } else {
         await AudioPro.play(track);
       }
+    },
+    skipForward: (seconds: number = 5) => {
+      AudioPro.seekForward(seconds * 1000); // Convert seconds to milliseconds
+    },
+    skipBack: (seconds: number = 5) => {
+      AudioPro.seekBack(seconds * 1000); // Convert seconds to milliseconds
     }
   }), [audioPro.state]);
 

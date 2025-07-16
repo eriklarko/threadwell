@@ -40,11 +40,15 @@ describe('AudioControls', () => {
 
   const mockControls = {
     togglePlayback: jest.fn(),
+    skipForward: jest.fn(),
+    skipBack: jest.fn(),
   };
 
   beforeEach(() => {
     jest.clearAllMocks();
     mockControls.togglePlayback.mockClear();
+    mockControls.skipForward.mockClear();
+    mockControls.skipBack.mockClear();
   });
 
   describe('IDLE state', () => {
@@ -75,6 +79,8 @@ describe('AudioControls', () => {
 
       expect(screen.getByTestId('audio-controls')).toBeTruthy();
       expect(screen.getByTestId('play-pause-button')).toBeTruthy();
+      expect(screen.getByTestId('skip-back-button')).toBeTruthy();
+      expect(screen.getByTestId('skip-forward-button')).toBeTruthy();
     });
 
     it('displays audio controls when in PAUSED state', () => {
@@ -84,6 +90,8 @@ describe('AudioControls', () => {
 
       expect(screen.getByTestId('audio-controls')).toBeTruthy();
       expect(screen.getByTestId('play-pause-button')).toBeTruthy();
+      expect(screen.getByTestId('skip-back-button')).toBeTruthy();
+      expect(screen.getByTestId('skip-forward-button')).toBeTruthy();
     });
 
     it('shows pause emoji when playing', () => {
@@ -156,6 +164,28 @@ describe('AudioControls', () => {
       expect(mockControls.togglePlayback).toHaveBeenCalledWith(mockTrack);
     });
 
+    it('calls skipBack when skip back button is pressed', () => {
+      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+
+      render(<AudioControls track={mockTrack} />);
+
+      const skipBackButton = screen.getByTestId('skip-back-button');
+      fireEvent.press(skipBackButton);
+
+      expect(mockControls.skipBack).toHaveBeenCalledWith(5);
+    });
+
+    it('calls skipForward when skip forward button is pressed', () => {
+      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+
+      render(<AudioControls track={mockTrack} />);
+
+      const skipForwardButton = screen.getByTestId('skip-forward-button');
+      fireEvent.press(skipForwardButton);
+
+      expect(mockControls.skipForward).toHaveBeenCalledWith(5);
+    });
+
     it('calls togglePlayback for other states when button is pressed', async () => {
       useAudioPlayer.mockReturnValue({ state: 'STOPPED', controls: mockControls });
 
@@ -198,6 +228,20 @@ describe('AudioControls', () => {
       const playButton = screen.getByTestId('play-pause-button');
       expect(playButton.props.accessibilityLabel).toBe('Pause');
       expect(playButton.props.accessibilityRole).toBe('button');
+    });
+
+    it('has proper accessibility labels for skip buttons', () => {
+      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+
+      render(<AudioControls track={mockTrack} />);
+
+      const skipBackButton = screen.getByTestId('skip-back-button');
+      expect(skipBackButton.props.accessibilityLabel).toBe('Skip back 5 seconds');
+      expect(skipBackButton.props.accessibilityRole).toBe('button');
+
+      const skipForwardButton = screen.getByTestId('skip-forward-button');
+      expect(skipForwardButton.props.accessibilityLabel).toBe('Skip forward 5 seconds');
+      expect(skipForwardButton.props.accessibilityRole).toBe('button');
     });
   });
 });
