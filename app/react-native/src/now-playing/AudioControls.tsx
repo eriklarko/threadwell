@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { spacing, colors, typography } from '../design-system';
 // TODO: Ports and adapters please :cry:
-import { AudioProState, AudioProTrack, useAudioPro } from 'react-native-audio-pro';
+import { AudioProState, AudioProTrack } from 'react-native-audio-pro';
 import { AudioPro } from 'react-native-audio-pro';
+import { useAudioPlayer } from './audio-player';
 
 interface AudioControlsProps {
   track: AudioProTrack;
@@ -19,20 +20,7 @@ export function AudioControls({ track }: AudioControlsProps) {
     AudioPro.play(track, { autoPlay: false });
   }, [track]);
 
-  // TODO: when I make my own hook, return the controls as well
-  const { state } = useAudioPro();
-  const controls = {
-    togglePlayback: async () => {
-      if (state === AudioProState.PLAYING) {
-        await AudioPro.pause();
-      } else if (state === AudioProState.PAUSED) {
-        // If paused and we don't need to load a new track, resume
-        AudioPro.resume();
-      } else {
-        await AudioPro.play(track);
-      }
-    }
-  }
+  const { state, controls } = useAudioPlayer();
 
   switch (state) {
     case AudioProState.IDLE:
@@ -46,7 +34,7 @@ export function AudioControls({ track }: AudioControlsProps) {
         <View style={styles.container} testID="audio-controls">
           <TouchableOpacity
             style={[styles.playButton, isPlaying && styles.playButtonActive]}
-            onPress={controls.togglePlayback}
+            onPress={() => controls.togglePlayback(track)}
             testID="play-pause-button"
             accessibilityLabel={isPlaying ? 'Pause' : 'Play'}
             accessibilityRole="button"
