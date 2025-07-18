@@ -6,7 +6,7 @@
  */
 
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import { NowPlayingScreen } from './now-playing/nowPlayingScreen';
+import { NowPlayingScreen } from './now-playing/NowPlayingScreen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';

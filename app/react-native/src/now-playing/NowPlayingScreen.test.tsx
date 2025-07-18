@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react-native';
-import { NowPlayingScreen } from './nowPlayingScreen';
+import { NowPlayingScreen } from './NowPlayingScreen';
 
 describe('NowPlayingScreen', () => {
   it('renders without crashing', () => {
