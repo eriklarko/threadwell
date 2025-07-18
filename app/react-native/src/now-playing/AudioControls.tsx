@@ -5,6 +5,7 @@ import { spacing, colors, typography } from '../design-system';
 import { AudioProState, AudioProTrack } from 'react-native-audio-pro';
 import { AudioPro } from 'react-native-audio-pro';
 import { useAudioPlayer } from './audio-player';
+import { ProgressBar } from './ProgressBar';
 
 interface AudioControlsProps {
   track: AudioProTrack;
@@ -20,7 +21,7 @@ export function AudioControls({ track }: AudioControlsProps) {
     AudioPro.play(track, { autoPlay: false });
   }, [track]);
 
-  const { state, controls } = useAudioPlayer();
+  const { state, position, duration, controls } = useAudioPlayer();
 
   switch (state) {
     case AudioProState.IDLE:
@@ -32,6 +33,8 @@ export function AudioControls({ track }: AudioControlsProps) {
       const isPlaying = state === AudioProState.PLAYING;
       return (
         <View style={styles.container} testID="audio-controls">
+          <ProgressBar position={position} duration={duration} />
+
           <View style={styles.controlsRow}>
             <TouchableOpacity
               style={styles.skipButton}

@@ -38,16 +38,22 @@ describe('useAudioPlayer', () => {
   });
 
   it('returns state from useAudioPro', () => {
-    useAudioPro.mockReturnValue({ state: AudioProState.PLAYING });
+    useAudioPro.mockReturnValue({
+      state: AudioProState.PLAYING,
+      position: 30000,
+      duration: 180000
+    });
 
     const { result } = renderHook(() => useAudioPlayer());
 
     expect(result.current.state).toBe(AudioProState.PLAYING);
+    expect(result.current.position).toBe(30000);
+    expect(result.current.duration).toBe(180000);
   });
 
   describe('togglePlayback control', () => {
     it('pauses when playing', async () => {
-      useAudioPro.mockReturnValue({ state: AudioProState.PLAYING });
+      useAudioPro.mockReturnValue({ state: AudioProState.PLAYING, position: 0, duration: 0 });
       AudioPro.pause.mockResolvedValue(undefined);
 
       const { result } = renderHook(() => useAudioPlayer());
@@ -60,7 +66,7 @@ describe('useAudioPlayer', () => {
     });
 
     it('resumes when paused', async () => {
-      useAudioPro.mockReturnValue({ state: AudioProState.PAUSED });
+      useAudioPro.mockReturnValue({ state: AudioProState.PAUSED, position: 0, duration: 0 });
 
       const { result } = renderHook(() => useAudioPlayer());
 
@@ -72,7 +78,7 @@ describe('useAudioPlayer', () => {
     });
 
     it('plays when not playing or paused', async () => {
-      useAudioPro.mockReturnValue({ state: AudioProState.IDLE });
+      useAudioPro.mockReturnValue({ state: AudioProState.IDLE, position: 0, duration: 0 });
       AudioPro.play.mockResolvedValue(undefined);
 
       const { result } = renderHook(() => useAudioPlayer());
@@ -85,7 +91,7 @@ describe('useAudioPlayer', () => {
     });
 
     it('plays when stopped', async () => {
-      useAudioPro.mockReturnValue({ state: AudioProState.STOPPED });
+      useAudioPro.mockReturnValue({ state: AudioProState.STOPPED, position: 0, duration: 0 });
       AudioPro.play.mockResolvedValue(undefined);
 
       const { result } = renderHook(() => useAudioPlayer());

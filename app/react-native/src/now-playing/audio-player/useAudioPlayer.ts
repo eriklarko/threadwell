@@ -10,6 +10,8 @@ export interface AudioPlayerControls {
 
 export interface UseAudioPlayerReturn {
   state: AudioProState;
+  position: number;
+  duration: number;
   controls: AudioPlayerControls;
 }
 
@@ -39,7 +41,9 @@ export function useAudioPlayer(): UseAudioPlayerReturn {
   }), [audioPro.state]);
 
   return {
-    ...audioPro,
+    state: audioPro.state,
+    position: audioPro.position || 0,
+    duration: audioPro.duration || 0,
     controls
   };
 }

@@ -44,6 +44,13 @@ describe('AudioControls', () => {
     skipBack: jest.fn(),
   };
 
+  const mockUseAudioPlayerReturn = {
+    state: 'IDLE',
+    position: 0,
+    duration: 0,
+    controls: mockControls
+  };
+
   beforeEach(() => {
     jest.clearAllMocks();
     mockControls.togglePlayback.mockClear();
@@ -53,7 +60,10 @@ describe('AudioControls', () => {
 
   describe('IDLE state', () => {
     it('shows "No track loaded" message when in IDLE state', () => {
-      useAudioPlayer.mockReturnValue({ state: 'IDLE', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'IDLE'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -63,7 +73,10 @@ describe('AudioControls', () => {
 
   describe('LOADING state', () => {
     it('shows loading indicator when in LOADING state', () => {
-      useAudioPlayer.mockReturnValue({ state: 'LOADING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'LOADING'
+      });
 
       const { UNSAFE_getByType } = render(<AudioControls track={mockTrack} />);
 
@@ -73,7 +86,12 @@ describe('AudioControls', () => {
 
   describe('PLAYING and PAUSED states', () => {
     it('displays audio controls when in PLAYING state', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING',
+        position: 30000,
+        duration: 180000
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -81,10 +99,16 @@ describe('AudioControls', () => {
       expect(screen.getByTestId('play-pause-button')).toBeTruthy();
       expect(screen.getByTestId('skip-back-button')).toBeTruthy();
       expect(screen.getByTestId('skip-forward-button')).toBeTruthy();
+      expect(screen.getByTestId('progress-bar')).toBeTruthy();
     });
 
     it('displays audio controls when in PAUSED state', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PAUSED', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED',
+        position: 60000,
+        duration: 240000
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -92,10 +116,14 @@ describe('AudioControls', () => {
       expect(screen.getByTestId('play-pause-button')).toBeTruthy();
       expect(screen.getByTestId('skip-back-button')).toBeTruthy();
       expect(screen.getByTestId('skip-forward-button')).toBeTruthy();
+      expect(screen.getByTestId('progress-bar')).toBeTruthy();
     });
 
     it('shows pause emoji when playing', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -103,7 +131,10 @@ describe('AudioControls', () => {
     });
 
     it('shows play emoji when paused', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PAUSED', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -113,7 +144,10 @@ describe('AudioControls', () => {
 
   describe('STOPPED state', () => {
     it('shows "Stopped" message when in STOPPED state', () => {
-      useAudioPlayer.mockReturnValue({ state: 'STOPPED', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'STOPPED'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -123,7 +157,10 @@ describe('AudioControls', () => {
 
   describe('ERROR state', () => {
     it('shows "Error occurred" message when in ERROR state', () => {
-      useAudioPlayer.mockReturnValue({ state: 'ERROR', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'ERROR'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -133,7 +170,10 @@ describe('AudioControls', () => {
 
   describe('Unknown state', () => {
     it('shows "Unknown state" message for unrecognized states', () => {
-      useAudioPlayer.mockReturnValue({ state: 'SOME_UNKNOWN_STATE', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'SOME_UNKNOWN_STATE'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -143,7 +183,10 @@ describe('AudioControls', () => {
 
   describe('User interactions', () => {
     it('calls togglePlayback when playing and button is pressed', async () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -154,7 +197,10 @@ describe('AudioControls', () => {
     });
 
     it('calls togglePlayback when paused and button is pressed', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PAUSED', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -165,7 +211,10 @@ describe('AudioControls', () => {
     });
 
     it('calls skipBack when skip back button is pressed', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -176,7 +225,10 @@ describe('AudioControls', () => {
     });
 
     it('calls skipForward when skip forward button is pressed', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -187,7 +239,10 @@ describe('AudioControls', () => {
     });
 
     it('calls togglePlayback for other states when button is pressed', async () => {
-      useAudioPlayer.mockReturnValue({ state: 'STOPPED', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'STOPPED'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -200,7 +255,10 @@ describe('AudioControls', () => {
 
   describe('Track loading', () => {
     it('loads track on component mount', () => {
-      useAudioPlayer.mockReturnValue({ state: 'IDLE', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'IDLE'
+      });
       AudioPro.play.mockResolvedValue(undefined);
 
       render(<AudioControls track={mockTrack} />);
@@ -211,7 +269,10 @@ describe('AudioControls', () => {
 
   describe('Accessibility', () => {
     it('has proper accessibility labels for play button when paused', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PAUSED', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -221,7 +282,10 @@ describe('AudioControls', () => {
     });
 
     it('has proper accessibility labels for pause button when playing', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
@@ -231,7 +295,10 @@ describe('AudioControls', () => {
     });
 
     it('has proper accessibility labels for skip buttons', () => {
-      useAudioPlayer.mockReturnValue({ state: 'PLAYING', controls: mockControls });
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PLAYING'
+      });
 
       render(<AudioControls track={mockTrack} />);
 
