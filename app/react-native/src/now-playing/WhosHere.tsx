@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { spacing, colors, typography, borderRadius } from '../design-system';
 
 export interface Character {
@@ -15,51 +15,30 @@ export interface WhosHereProps {
 }
 
 /**
- * Gets the initials for a character name
- * @param name - The character's full name
- * @returns The character's initials (up to 2 characters)
- */
-function getCharacterInitials(name: string): string {
-  const words = name.trim().split(' ');
-  if (words.length === 1) {
-    return words[0].charAt(0).toUpperCase();
-  }
-  return words.slice(0, 2).map(word => word.charAt(0).toUpperCase()).join('');
-}
-
-/**
  * Who's Here pane component showing characters in the current scene
  */
 export function WhosHere({ characters, onCharacterPress }: WhosHereProps) {
   return (
     <View style={styles.container} testID="whos-here-pane">
-    {characters.length > 0 ? (
+      {characters.length > 0 ? (
         <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.characterListContainer}
-        contentContainerStyle={styles.characterListContent}
-        testID="character-list"
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.characterListContainer}
+          contentContainerStyle={styles.characterListContent}
+          testID="character-list"
         >
-        {characters.map((character) => (
-            <TouchableOpacity
-            key={character.id}
-            style={styles.characterItem}
-            onPress={() => onCharacterPress(character)}
-            testID={`character-avatar-${character.id}`}
-            >
-            <View style={styles.avatar}>
-                <Text style={styles.avatarText}>
-                {getCharacterInitials(character.name)}
-                </Text>
-            </View>
-            <Text numberOfLines={2} style={styles.characterName}>{character.name}</Text>
-            </TouchableOpacity>
-        ))}
+          {characters.map((character) => (
+            <CharacterItem
+              key={character.id}
+              character={character}
+              onPress={() => onCharacterPress(character)}
+            />
+          ))}
         </ScrollView>
-    ) : (
+      ) : (
         <Text style={styles.emptyMessage}>No characters in this scene</Text>
-    )}
+      )}
     </View>
   );
 }
@@ -98,6 +77,11 @@ const styles = StyleSheet.create({
     fontWeight: typography.weights.bold,
     color: colors.background,
   },
+  avatarImage: {
+    width: 64,
+    height: 64,
+    borderRadius: 32,
+  },
   characterName: {
     color: colors.text.primary,
     fontSize: typography.sizes.small,
@@ -111,3 +95,46 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
   },
 });
+
+/**
+ * Character item component with avatar and name
+ */
+function CharacterItem({ character, onPress }: { character: Character; onPress: () => void }) {
+  return (
+    <TouchableOpacity
+      style={styles.characterItem}
+      onPress={onPress}
+      testID={`character-avatar-${character.id}`}
+    >
+      <View style={styles.avatar}>
+        {character.avatar ? (
+          <Image
+            source={{ uri: character.avatar }}
+            style={styles.avatarImage}
+            testID={`character-avatar-image-${character.id}`}
+          />
+        ) : (
+          <Text style={styles.avatarText}>
+            {getCharacterInitials(character.name)}
+          </Text>
+        )}
+      </View>
+      <Text numberOfLines={2} style={styles.characterName}>
+        {character.name}
+      </Text>
+    </TouchableOpacity>
+  );
+}
+
+/**
+ * Gets the initials for a character name
+ * @param name - The character's full name
+ * @returns The character's initials (up to 2 characters)
+ */
+function getCharacterInitials(name: string): string {
+  const words = name.trim().split(' ');
+  if (words.length === 1) {
+    return words[0].charAt(0).toUpperCase();
+  }
+  return words.slice(0, 2).map(word => word.charAt(0).toUpperCase()).join('');
+}

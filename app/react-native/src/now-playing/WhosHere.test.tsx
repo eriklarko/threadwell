@@ -133,4 +133,56 @@ describe('WhosHere', () => {
     const characterNameText = screen.getByText(longNameCharacter.name);
     expect(characterNameText.props.numberOfLines).toBe(2);
   });
+
+  it('displays character name when avatar is not provided', () => {
+    const characterWithoutAvatar = {
+      id: 'no-avatar',
+      name: 'No Avatar Character',
+    };
+
+    render(
+      <WhosHere
+        characters={[characterWithoutAvatar]}
+        onCharacterPress={mockOnCharacterPress}
+      />
+    );
+
+    expect(screen.getByText('No Avatar Character')).toBeOnTheScreen();
+  });
+
+  it('displays character name when avatar is provided', () => {
+    const characterWithAvatar = {
+      id: 'with-avatar',
+      name: 'Avatar Character',
+      avatar: 'path/to/avatar.jpg',
+    };
+
+    render(
+      <WhosHere
+        characters={[characterWithAvatar]}
+        onCharacterPress={mockOnCharacterPress}
+      />
+    );
+
+    expect(screen.getByText('Avatar Character')).toBeOnTheScreen();
+  });
+
+  it('displays actual image when avatar is provided', () => {
+    const characterWithAvatar = {
+      id: 'with-avatar',
+      name: 'Avatar Character',
+      avatar: 'path/to/avatar.jpg',
+    };
+
+    render(
+      <WhosHere
+        characters={[characterWithAvatar]}
+        onCharacterPress={mockOnCharacterPress}
+      />
+    );
+
+    const avatarImage = screen.getByTestId('character-avatar-image-with-avatar');
+    expect(avatarImage).toBeOnTheScreen();
+    expect(avatarImage.props.source).toEqual({ uri: 'path/to/avatar.jpg' });
+  });
 });
