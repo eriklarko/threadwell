@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
 import { spacing, colors, typography, borderRadius } from '../design-system';
 import { AudioControls } from './AudioControls';
+import { WhosHere } from './WhosHere';
 
 export function NowPlayingScreen() {
   return (
@@ -34,6 +35,24 @@ export function NowPlayingScreen() {
           artist: 'Lewis Carroll',
           artwork: '../assets/images/alice-cover.jpg',
         }}/>
+
+        <WhosHere
+          characters={[{
+            id: 'alice',
+            name: 'Alice',
+          },{
+            id: 'mad-hatter',
+            name: 'Mad Hatter',
+          }, {
+            id: 'march-hare',
+            name: 'March Hare of ridiculous doom',
+          }, {
+            id: 'dormouse',
+            name: 'Dormouse',
+            avatar: 'https://picsum.photos/200',
+          }]}
+          onCharacterPress={(c) => console.log(`Character pressed`, c)}
+        />
       </View>
     </SafeAreaView>
   );

@@ -6,8 +6,6 @@ This sketch illustrates the layout for the 'Who's Here?' pane, which provides a 
 
 ```
 +-----------------------------------+
-|                              [X]  |
-+-----------------------------------+
 |                                   |
 |  [Description of Current Scene]   |
 |  (e.g., "Alice is now in the      |
