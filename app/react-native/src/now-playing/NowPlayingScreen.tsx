@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
-import { spacing, colors, typography, borderRadius } from '../design-system';
+import { View, Text, Image, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity } from 'react-native';
+import { spacing, colors, typography, borderRadius, gridSize } from '../design-system';
 import { AudioControls } from './audio-player/AudioControls';
 import { WhosHere } from './WhosHere';
 import { Spacer } from '../design-system/Spacer';
@@ -28,7 +28,13 @@ export function NowPlayingScreen() {
   return (
     <SafeAreaView style={styles.container} testID="now-playing-screen">
       <View style={styles.header} testID="now-playing-header">
-        {/* Header will have back button and settings in future steps */}
+        <TouchableOpacity
+          style={styles.chatButton}
+          onPress={() => console.log('Chat button pressed')}
+          testID="chat-button"
+        >
+          <Text style={styles.chatButtonText}>💬</Text>
+        </TouchableOpacity>
       </View>
 
       <ScrollView
@@ -83,9 +89,27 @@ const styles = StyleSheet.create({
     backgroundColor: colors.background,
   },
   header: {
-    height: 60,
+    height: gridSize * 7.5, // 60px based on gridSize
     paddingHorizontal: spacing.md,
     justifyContent: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  chatButton: {
+    position: 'absolute',
+    right: spacing.md,
+    top: 0,
+    bottom: 0,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: gridSize * 6,
+    height: gridSize * 6,
+    borderRadius: gridSize * 3,
+    backgroundColor: colors.text.primary,
+  },
+  chatButtonText: {
+    fontSize: typography.sizes.large,
+    color: colors.background,
   },
   scrollView: {
     flex: 1,
@@ -101,8 +125,8 @@ const styles = StyleSheet.create({
     minWidth: '100%',
   },
   coverArt: {
-    width: 200,
-    height: 280,
+    width: gridSize * 25, // 200px based on gridSize
+    height: gridSize * 35, // 280px based on gridSize
     borderRadius: borderRadius.lg,
     marginBottom: spacing.lg,
   },

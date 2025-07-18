@@ -11,6 +11,5 @@ Let's start by breaking down the screen into multiple steps
 3. audio controls; skip back 5s, skip forward 5s - DONE!
 4. progress bar showing how much of the audio file is left - DONE!
 5. ensure progress bar shows file duration on load - DONE!
-5. Stub out Who's Here.
-6. add chat button that does nothing
-
+6. Stub out Who's Here.
+7. add chat button that does nothing
