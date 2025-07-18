@@ -122,7 +122,8 @@ describe('AudioControls', () => {
     it('shows pause emoji when playing', () => {
       useAudioPlayer.mockReturnValue({
         ...mockUseAudioPlayerReturn,
-        state: 'PLAYING'
+        state: 'PLAYING',
+        duration: 180000
       });
 
       render(<AudioControls track={mockTrack} />);
@@ -133,7 +134,8 @@ describe('AudioControls', () => {
     it('shows play emoji when paused', () => {
       useAudioPlayer.mockReturnValue({
         ...mockUseAudioPlayerReturn,
-        state: 'PAUSED'
+        state: 'PAUSED',
+        duration: 180000
       });
 
       render(<AudioControls track={mockTrack} />);
@@ -185,7 +187,8 @@ describe('AudioControls', () => {
     it('calls togglePlayback when playing and button is pressed', async () => {
       useAudioPlayer.mockReturnValue({
         ...mockUseAudioPlayerReturn,
-        state: 'PLAYING'
+        state: 'PLAYING',
+        duration: 180000
       });
 
       render(<AudioControls track={mockTrack} />);
@@ -199,7 +202,8 @@ describe('AudioControls', () => {
     it('calls togglePlayback when paused and button is pressed', () => {
       useAudioPlayer.mockReturnValue({
         ...mockUseAudioPlayerReturn,
-        state: 'PAUSED'
+        state: 'PAUSED',
+        duration: 180000
       });
 
       render(<AudioControls track={mockTrack} />);
@@ -213,7 +217,8 @@ describe('AudioControls', () => {
     it('calls skipBack when skip back button is pressed', () => {
       useAudioPlayer.mockReturnValue({
         ...mockUseAudioPlayerReturn,
-        state: 'PLAYING'
+        state: 'PLAYING',
+        duration: 180000
       });
 
       render(<AudioControls track={mockTrack} />);
@@ -227,7 +232,8 @@ describe('AudioControls', () => {
     it('calls skipForward when skip forward button is pressed', () => {
       useAudioPlayer.mockReturnValue({
         ...mockUseAudioPlayerReturn,
-        state: 'PLAYING'
+        state: 'PLAYING',
+        duration: 180000
       });
 
       render(<AudioControls track={mockTrack} />);
@@ -309,6 +315,47 @@ describe('AudioControls', () => {
       const skipForwardButton = screen.getByTestId('skip-forward-button');
       expect(skipForwardButton.props.accessibilityLabel).toBe('Skip forward 5 seconds');
       expect(skipForwardButton.props.accessibilityRole).toBe('button');
+    });
+  });
+
+  describe('Progress bar visibility', () => {
+    it('shows progress bar when duration is available', () => {
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED',
+        position: 30000,
+        duration: 180000
+      });
+
+      render(<AudioControls track={mockTrack} />);
+
+      expect(screen.getByTestId('progress-bar')).toBeTruthy();
+    });
+
+    it('hides progress bar when duration is not available (duration <= 0)', () => {
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED',
+        position: 0,
+        duration: -1
+      });
+
+      render(<AudioControls track={mockTrack} />);
+
+      expect(screen.queryByTestId('progress-bar')).toBeNull();
+    });
+
+    it('hides progress bar when duration is zero', () => {
+      useAudioPlayer.mockReturnValue({
+        ...mockUseAudioPlayerReturn,
+        state: 'PAUSED',
+        position: 0,
+        duration: 0
+      });
+
+      render(<AudioControls track={mockTrack} />);
+
+      expect(screen.queryByTestId('progress-bar')).toBeNull();
     });
   });
 });

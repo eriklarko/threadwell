@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { spacing, colors, typography } from '../design-system';
+import { spacing, colors, typography, borderRadius } from '../design-system';
 
 interface ProgressBarProps {
   position: number; // Current position in milliseconds
@@ -49,31 +49,35 @@ export function ProgressBar({ position, duration }: ProgressBarProps) {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    width: '100%',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
   },
   timeText: {
     fontSize: typography.sizes.small,
     color: colors.text.secondary,
     fontWeight: typography.weights.medium,
-    width: 50,
     textAlign: 'center',
   },
   progressBarContainer: {
     flex: 1,
-    paddingHorizontal: spacing.md,
   },
   progressTrack: {
-    height: 4,
+    height: spacing.xs,
     backgroundColor: colors.surface,
-    borderRadius: 2,
     overflow: 'hidden',
+
+    marginHorizontal: spacing.sm,
+
+    borderWidth: 1,
+    borderColor: colors.accent,
+    borderRadius: borderRadius.sm,
   },
   progressFill: {
     height: '100%',
     backgroundColor: colors.accent,
-    borderRadius: 2,
+    borderRadius: borderRadius.sm,
   },
 });

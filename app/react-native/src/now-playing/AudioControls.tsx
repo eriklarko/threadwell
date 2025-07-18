@@ -33,7 +33,11 @@ export function AudioControls({ track }: AudioControlsProps) {
       const isPlaying = state === AudioProState.PLAYING;
       return (
         <View style={styles.container} testID="audio-controls">
-          <ProgressBar position={position} duration={duration} />
+          <View style={styles.progressBarWrapper}>
+            {duration > 0 ? (
+              <ProgressBar position={position} duration={duration} />
+            ) : null}
+          </View>
 
           <View style={styles.controlsRow}>
             <TouchableOpacity
@@ -89,6 +93,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: spacing.lg,
+    marginTop: spacing.md,
   },
   playButton: {
     // TODO: Use design system for button styles
@@ -133,5 +138,10 @@ const styles = StyleSheet.create({
     fontSize: typography.sizes.body,
     color: colors.text.secondary,
     marginTop: spacing.sm,
+  },
+  progressBarWrapper: {
+    // Fixed height for progress bar area to prevent UI jumping
+    height: spacing.lg,
+    justifyContent: 'center',
   },
 });
