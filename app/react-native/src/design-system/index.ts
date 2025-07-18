@@ -1,4 +1,4 @@
-const gridSize = 8;
+export const gridSize = 8;
 
 export const spacing = {
   xs: gridSize / 2,     // 4
