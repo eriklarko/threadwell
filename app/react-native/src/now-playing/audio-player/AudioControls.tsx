@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { View, TouchableOpacity, Text, StyleSheet, ActivityIndicator } from 'react-native';
-import { spacing, colors, typography } from '../design-system';
+import { spacing, colors, typography } from '../../design-system';
 // TODO: Ports and adapters please :cry:
 import { AudioProState, AudioProTrack } from 'react-native-audio-pro';
 import { AudioPro } from 'react-native-audio-pro';
-import { useAudioPlayer } from './audio-player';
+import { useAudioPlayer } from '.';
 import { ProgressBar } from './ProgressBar';
 
 interface AudioControlsProps {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react-native';
 import { ActivityIndicator } from 'react-native';
-import { AudioControls } from './AudioControls';
+import { AudioControls } from './AudioControls.tsx';
 import { AudioProState, AudioProTrack } from 'react-native-audio-pro';
 
 // Mock the react-native-audio-pro library
@@ -22,7 +22,7 @@ jest.mock('react-native-audio-pro', () => ({
 }));
 
 // Mock our custom hook
-jest.mock('./audio-player', () => ({
+jest.mock('.', () => ({
   useAudioPlayer: jest.fn(),
 }));
 
@@ -36,7 +36,7 @@ const mockTrack: AudioProTrack = {
 
 describe('AudioControls', () => {
   const { AudioPro } = require('react-native-audio-pro');
-  const { useAudioPlayer } = require('./audio-player');
+  const { useAudioPlayer } = require('.');
 
   const mockControls = {
     togglePlayback: jest.fn(),

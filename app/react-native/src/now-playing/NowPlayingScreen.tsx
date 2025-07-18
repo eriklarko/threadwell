@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
 import { spacing, colors, typography, borderRadius } from '../design-system';
-import { AudioControls } from './AudioControls';
+import { AudioControls } from './audio-player/AudioControls';
 import { WhosHere } from './WhosHere';
 
 export function NowPlayingScreen() {
