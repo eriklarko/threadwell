@@ -1,1 +1,1 @@
-Add location to NowPlaying
+Add location (where the scene takes place) to NowPlaying
