@@ -1,3 +1,7 @@
 {
-  "scene_text": "“In my youth,” said his father, “I took to the law,\n    And argued each case with my wife;\nAnd the muscular strength, which it gave to my jaw,\n    Has lasted the rest of my life.”\n\n“You are old,” said the youth, “one would hardly suppose\n    That your eye was as steady as ever;\nYet you balanced an eel on the end of your nose—\n    What made you so awfully clever?”"
+  "scene_text": "\u201cIn my youth,\u201d said his father, \u201cI took to the law,\n    And argued each case with my wife;\nAnd the muscular strength, which it gave to my jaw,\n    Has lasted the rest of my life.\u201d\n\n\u201cYou are old,\u201d said the youth, \u201cone would hardly suppose\n    That your eye was as steady as ever;\nYet you balanced an eel on the end of your nose\u2014\n    What made you so awfully clever?\u201d",
+  "characters": [
+    "father",
+    "youth"
+  ]
 }

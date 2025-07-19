@@ -3,6 +3,7 @@ import dspy
 import sys
 import os
 import glob
+import asyncio
 from typing import List
 
 
@@ -78,22 +79,27 @@ def get_json_files(path):
         sys.exit(1)
 
 
-def check_existing_characters_and_confirm(scene_data):
+def check_existing_characters_and_confirm(scene_data, file_path):
     """Check if characters already exist and get user confirmation to overwrite."""
     if "characters" in scene_data:
-        print("WARNING: Characters data already exists in the JSON file.")
+        return False # TODO: remove
+
+        print(f"WARNING: Characters data already exists in {file_path}")
         print(f"Existing characters: {scene_data['characters']}")
-        response = input("Do you want to continue and overwrite the existing data? (y/N): ").strip().lower()
+        response = input(f"Do you want to continue and overwrite the existing data for {os.path.basename(file_path)}? (y/N): ").strip().lower()
         if response not in ['y', 'yes']:
-            print("Operation cancelled. Existing data preserved.")
+            print(f"Operation cancelled for {file_path}. Existing data preserved.")
             return False
+
     return True
 
 
-def extract_characters_from_scene(scene_text):
+async def extract_characters_from_scene(scene_text):
     """Extract characters from the scene text using DSPy model."""
+    # Run the synchronous DSPy call in a thread pool to avoid blocking
+    loop = asyncio.get_event_loop()
     predictor = create_predictor()
-    result = predictor(scene_text=scene_text)
+    result = await loop.run_in_executor(None, lambda: predictor(scene_text=scene_text))
     return result.characters
 
 
@@ -107,7 +113,7 @@ def save_characters_to_file(file_path, scene_data, characters):
     print(f"Updated JSON file: {file_path}")
 
 
-def process_single_file(file_path):
+async def process_single_file(file_path):
     """Process a single JSON file for character extraction."""
     print(f"Processing: {file_path}")
 
@@ -117,19 +123,19 @@ def process_single_file(file_path):
         return False
 
     # Check for existing characters and get user confirmation if needed
-    if not check_existing_characters_and_confirm(scene_data):
+    if not check_existing_characters_and_confirm(scene_data, file_path):
         print(f"Skipped: {file_path}")
         return False
 
     # Extract characters from the scene text
-    characters = extract_characters_from_scene(scene_data["scene_text"])
+    characters = await extract_characters_from_scene(scene_data["scene_text"])
 
     # Save the results back to the file
     save_characters_to_file(file_path, scene_data, characters)
     return True
 
 
-def main():
+async def main():
     # Check command line arguments
     if len(sys.argv) != 2:
         print("Usage: python main.py <path-to-scene-json-file-or-directory>")
@@ -147,15 +153,16 @@ def main():
     print(f"Found {len(json_files)} JSON file(s) to process")
     print()
 
-    # Process each file
-    processed_count = 0
-    for file_path in json_files:
-        if process_single_file(file_path):
-            processed_count += 1
-        print()  # Add blank line between files
+    # Process all files in parallel
+    tasks = [process_single_file(file_path) for file_path in json_files]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
 
+    # Count successful processes
+    processed_count = sum(1 for result in results if result is True)
+
+    print()
     print(f"Successfully processed {processed_count} out of {len(json_files)} files")
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

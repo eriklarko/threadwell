@@ -1,3 +1,9 @@
 {
-  "scene_text": "“I’d rather not,” the Cat remarked.\n\n“Don’t be impertinent,” said the King, “and don’t look at me like\nthat!” He got behind Alice as he spoke.\n\n“A cat may look at a king,” said Alice. “I’ve read that in some book,\nbut I don’t remember where.”\n\n“Well, it must be removed,” said the King very decidedly, and he called\nthe Queen, who was passing at the moment, “My dear! I wish you would\nhave this cat removed!”"
+  "scene_text": "\u201cI\u2019d rather not,\u201d the Cat remarked.\n\n\u201cDon\u2019t be impertinent,\u201d said the King, \u201cand don\u2019t look at me like\nthat!\u201d He got behind Alice as he spoke.\n\n\u201cA cat may look at a king,\u201d said Alice. \u201cI\u2019ve read that in some book,\nbut I don\u2019t remember where.\u201d\n\n\u201cWell, it must be removed,\u201d said the King very decidedly, and he called\nthe Queen, who was passing at the moment, \u201cMy dear! I wish you would\nhave this cat removed!\u201d",
+  "characters": [
+    "Cat",
+    "King",
+    "Alice",
+    "Queen"
+  ]
 }

@@ -1,0 +1,1 @@
+Characters in these json files are from Claude Opus 4. It cost $4.49 to make one request per scene

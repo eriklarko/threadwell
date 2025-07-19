@@ -1,3 +1,7 @@
 {
-  "scene_text": "“You are old, Father William,” the young man said,\n    “And your hair has become very white;\nAnd yet you incessantly stand on your head—\n    Do you think, at your age, it is right?”\n\n“In my youth,” Father William replied to his son,\n    “I feared it might injure the brain;\nBut, now that I’m perfectly sure I have none,\n    Why, I do it again and again.”"
+  "scene_text": "\u201cYou are old, Father William,\u201d the young man said,\n    \u201cAnd your hair has become very white;\nAnd yet you incessantly stand on your head\u2014\n    Do you think, at your age, it is right?\u201d\n\n\u201cIn my youth,\u201d Father William replied to his son,\n    \u201cI feared it might injure the brain;\nBut, now that I\u2019m perfectly sure I have none,\n    Why, I do it again and again.\u201d",
+  "characters": [
+    "Father William",
+    "the young man"
+  ]
 }
