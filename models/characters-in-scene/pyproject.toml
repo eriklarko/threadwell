@@ -1,0 +1,10 @@
+[project]
+name = "characters-in-scene"
+version = "0.1.0"
+description = "DSPy program to extract characters from book scenes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dspy",
+    "pytest",
+]
