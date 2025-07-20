@@ -15,7 +15,7 @@ Threadwell is more than just a play button. It gives you special controls to exp
 
 *   **Scene Rewind:** Want to remember how the characters got to a specific location? Rewind to the start of their journey in the current scene.
 *   **Who's Here?:** Instantly see a list of all the characters present in the scene you're listening to.
-*   **Character Dossier:** Get a quick summary of what a character looks like or review a complete history of everything they've done in the story so far.
+*   **Character Dossier:** Get a quick summary of what a character looks like and a complete history of everything they've done in the story so far. Allow user to ask questions about the character
 *   **Ask Me Anything (About the Book):** Have a question about the plot, a character, or a location? Just ask! The app's chat feature will answer your questions based *only* on the parts of the book you've already heard, so you never have to worry about spoilers.
 
 ## Who is it for?

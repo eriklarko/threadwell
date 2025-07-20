@@ -1,11 +1,11 @@
-# Epic 6: Use DSPy to Extract Characters from a Scene
+# Epic 6: Extract Characters from a Scene
 
-This epic is about using DSPy to extract characters from a scene.
+This epic is about extracting characters from a scene.
 
 ## Requirements
 
 ### Goal
-The primary goal of this epic is to create a DSPy program that can identify and extract a list of characters from a given block of text representing a scene from a book. This will power the "Who's Here?" feature in the Threadwell app.
+The primary goal of this epic is to create a program that can identify and extract a list of characters from a given block of text representing a scene from a book. This will power the "Who's Here?" feature in the Threadwell app.
 
 ### Input
 - A string containing a block of text. This text can span multiple paragraphs and represents a single "scene".
@@ -36,6 +36,10 @@ The primary goal of this epic is to create a DSPy program that can identify and 
 
 https://dspy.ai/tutorials/entity_extraction/
 
-## deliverables
+## deliverables 1
 
-a DSPy program that uses a foundation model to extract characters from a scene
+a program that uses a foundation model to extract characters from a scene
+
+## deliverables 2
+
+Could I use NER for this instead?
