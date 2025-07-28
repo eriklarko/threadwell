@@ -4,5 +4,31 @@
     "The Gryphon",
     "Alice",
     "The Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 165,
+          "end": 170,
+          "text": "Alice"
+        },
+        {
+          "start": 199,
+          "end": 204,
+          "text": "Alice"
+        },
+        {
+          "start": 357,
+          "end": 362,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

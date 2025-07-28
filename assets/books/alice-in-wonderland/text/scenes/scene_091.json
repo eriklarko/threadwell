@@ -5,5 +5,45 @@
     "the Duchess",
     "the Cheshire cat",
     "the baby"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 33,
+          "end": 38,
+          "text": "Alice"
+        },
+        {
+          "start": 289,
+          "end": 294,
+          "text": "Alice"
+        },
+        {
+          "start": 619,
+          "end": 624,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Pig",
+      "aliases": [
+        "Pig"
+      ],
+
+      "mentions": [
+        {
+          "start": 228,
+          "end": 231,
+          "text": "Pig"
+        }
+      ]
+    }
   ]
 }

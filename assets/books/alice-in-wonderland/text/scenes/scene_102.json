@@ -4,5 +4,69 @@
     "Alice",
     "the Cat",
     "the Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 32,
+          "end": 37,
+          "text": "Alice"
+        },
+        {
+          "start": 104,
+          "end": 109,
+          "text": "Alice"
+        },
+        {
+          "start": 295,
+          "end": 300,
+          "text": "Alice"
+        },
+        {
+          "start": 538,
+          "end": 543,
+          "text": "Alice"
+        },
+        {
+          "start": 666,
+          "end": 671,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 615,
+          "end": 620,
+          "text": "Queen"
+        }
+      ]
+    },
+    {
+      "primary_name": "Cat",
+      "aliases": [
+        "Cat"
+      ],
+
+      "mentions": [
+        {
+          "start": 740,
+          "end": 743,
+          "text": "Cat"
+        }
+      ]
+    }
   ]
 }

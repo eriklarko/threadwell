@@ -2,5 +2,21 @@
   "scene_text": "\u201cNot like cats!\u201d cried the Mouse, in a shrill, passionate voice. \u201cWould\n_you_ like cats if you were me?\u201d",
   "characters_mentioned": [
     "Mouse"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Mouse",
+      "aliases": [
+        "Mouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 27,
+          "end": 32,
+          "text": "Mouse"
+        }
+      ]
+    }
   ]
 }

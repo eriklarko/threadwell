@@ -7,5 +7,45 @@
     "Queen",
     "guinea-pigs",
     "officers of the court"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 409,
+          "end": 414,
+          "text": "Alice"
+        },
+        {
+          "start": 924,
+          "end": 929,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 736,
+          "end": 742,
+          "text": "Hatter"
+        },
+        {
+          "start": 999,
+          "end": 1005,
+          "text": "Hatter"
+        }
+      ]
+    }
   ]
 }

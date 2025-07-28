@@ -5,5 +5,45 @@
     "the Queen",
     "Alice",
     "the King"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 350,
+          "end": 355,
+          "text": "Alice"
+        },
+        {
+          "start": 361,
+          "end": 366,
+          "text": "Alice"
+        },
+        {
+          "start": 1088,
+          "end": 1093,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 620,
+          "end": 625,
+          "text": "Queen"
+        }
+      ]
+    }
   ]
 }

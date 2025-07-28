@@ -3,5 +3,45 @@
   "characters_mentioned": [
     "Owl",
     "Panther"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Panther",
+      "aliases": [
+        "Panther"
+      ],
+
+      "mentions": [
+        {
+          "start": 71,
+          "end": 78,
+          "text": "Panther"
+        },
+        {
+          "start": 142,
+          "end": 149,
+          "text": "Panther"
+        },
+        {
+          "start": 344,
+          "end": 351,
+          "text": "Panther"
+        }
+      ]
+    },
+    {
+      "primary_name": "Owl",
+      "aliases": [
+        "Owl"
+      ],
+
+      "mentions": [
+        {
+          "start": 276,
+          "end": 279,
+          "text": "Owl"
+        }
+      ]
+    }
   ]
 }

@@ -5,5 +5,40 @@
     "Queen",
     "Dormouse",
     "King"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Pepper",
+      "aliases": [
+        "Pepper"
+      ],
+
+      "mentions": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "Pepper"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dormouse",
+      "aliases": [
+        "Dormouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 159,
+          "end": 167,
+          "text": "Dormouse"
+        },
+        {
+          "start": 295,
+          "end": 303,
+          "text": "Dormouse"
+        }
+      ]
+    }
   ]
 }

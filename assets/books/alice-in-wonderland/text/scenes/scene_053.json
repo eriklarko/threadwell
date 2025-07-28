@@ -3,5 +3,40 @@
   "characters_mentioned": [
     "Rabbit",
     "Pat"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Pat",
+      "aliases": [
+        "Pat"
+      ],
+
+      "mentions": [
+        {
+          "start": 44,
+          "end": 47,
+          "text": "Pat"
+        },
+        {
+          "start": 306,
+          "end": 309,
+          "text": "Pat"
+        }
+      ]
+    },
+    {
+      "primary_name": "Rabbit",
+      "aliases": [
+        "Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 204,
+          "end": 210,
+          "text": "Rabbit"
+        }
+      ]
+    }
   ]
 }

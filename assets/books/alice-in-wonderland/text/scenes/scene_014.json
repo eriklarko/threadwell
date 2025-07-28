@@ -2,5 +2,26 @@
   "scene_text": "Soon her eye fell on a little glass box that was lying under the table:\nshe opened it, and found in it a very small cake, on which the words\n\u201cEAT ME\u201d were beautifully marked in currants. \u201cWell, I\u2019ll eat it,\u201d said\nAlice, \u201cand if it makes me grow larger, I can reach the key; and if it\nmakes me grow smaller, I can creep under the door; so either way I\u2019ll\nget into the garden, and I don\u2019t care which happens!\u201d\n\nShe ate a little bit, and said anxiously to herself, \u201cWhich way? Which\nway?\u201d, holding her hand on the top of her head to feel which way it was\ngrowing, and she was quite surprised to find that she remained the same\nsize: to be sure, this generally happens when one eats cake, but Alice\nhad got so much into the way of expecting nothing but out-of-the-way\nthings to happen, that it seemed quite dull and stupid for life to go\non in the common way.\n\nSo she set to work, and very soon finished off the cake.\n\n*      *      *      *      *      *      *",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 213,
+          "end": 218,
+          "text": "Alice"
+        },
+        {
+          "start": 689,
+          "end": 694,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

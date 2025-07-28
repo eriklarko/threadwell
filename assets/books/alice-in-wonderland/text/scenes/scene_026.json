@@ -4,5 +4,45 @@
     "Alice",
     "Mouse",
     "William the Conqueror"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 49,
+          "end": 54,
+          "text": "Alice"
+        },
+        {
+          "start": 168,
+          "end": 173,
+          "text": "Alice"
+        },
+        {
+          "start": 453,
+          "end": 458,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "William the Conqueror",
+      "aliases": [
+        "William the Conqueror"
+      ],
+
+      "mentions": [
+        {
+          "start": 103,
+          "end": 124,
+          "text": "William the Conqueror"
+        }
+      ]
+    }
   ]
 }

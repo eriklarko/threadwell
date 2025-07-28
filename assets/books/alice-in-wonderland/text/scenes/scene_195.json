@@ -4,5 +4,21 @@
     "King",
     "White Rabbit",
     "Hatter"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 156,
+          "end": 162,
+          "text": "Hatter"
+        }
+      ]
+    }
   ]
 }

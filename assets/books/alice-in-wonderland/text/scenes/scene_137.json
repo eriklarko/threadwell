@@ -4,5 +4,36 @@
     "Alice",
     "Queen",
     "soldiers"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 31,
+          "end": 36,
+          "text": "Alice"
+        },
+        {
+          "start": 443,
+          "end": 448,
+          "text": "Alice"
+        },
+        {
+          "start": 511,
+          "end": 516,
+          "text": "Alice"
+        },
+        {
+          "start": 558,
+          "end": 563,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

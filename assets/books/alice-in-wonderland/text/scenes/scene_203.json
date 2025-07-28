@@ -4,5 +4,21 @@
     "the King",
     "the cook",
     "the White Rabbit"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "the White Rabbit",
+      "aliases": [
+        "the White Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 93,
+          "end": 109,
+          "text": "the White Rabbit"
+        }
+      ]
+    }
   ]
 }

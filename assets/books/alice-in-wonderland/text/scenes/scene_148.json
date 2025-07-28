@@ -3,5 +3,21 @@
   "characters_mentioned": [
     "Alice",
     "the executioner"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 11,
+          "end": 16,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

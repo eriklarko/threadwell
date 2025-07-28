@@ -3,5 +3,45 @@
   "characters_mentioned": [
     "Pigeon",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 227,
+          "end": 232,
+          "text": "Alice"
+        },
+        {
+          "start": 552,
+          "end": 557,
+          "text": "Alice"
+        },
+        {
+          "start": 692,
+          "end": 697,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Serpent",
+      "aliases": [
+        "Serpent"
+      ],
+
+      "mentions": [
+        {
+          "start": 497,
+          "end": 504,
+          "text": "Serpent"
+        }
+      ]
+    }
   ]
 }

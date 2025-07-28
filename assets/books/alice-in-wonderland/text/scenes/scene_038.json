@@ -5,5 +5,21 @@
     "the Mouse",
     "the large birds",
     "the small ones"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 372,
+          "end": 377,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

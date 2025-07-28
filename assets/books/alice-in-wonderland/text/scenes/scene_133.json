@@ -4,5 +4,50 @@
     "Alice",
     "Queen",
     "Knave of Hearts"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 37,
+          "end": 42,
+          "text": "Alice"
+        },
+        {
+          "start": 267,
+          "end": 272,
+          "text": "Alice"
+        },
+        {
+          "start": 327,
+          "end": 332,
+          "text": "Alice"
+        },
+        {
+          "start": 364,
+          "end": 369,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the\nKnave",
+      "aliases": [
+        "the\nKnave"
+      ],
+
+      "mentions": [
+        {
+          "start": 138,
+          "end": 147,
+          "text": "the\nKnave"
+        }
+      ]
+    }
   ]
 }

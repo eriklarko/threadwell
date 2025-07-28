@@ -3,5 +3,36 @@
   "characters_mentioned": [
     "Alice",
     "Rabbit"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 40,
+          "end": 45,
+          "text": "Alice"
+        },
+        {
+          "start": 210,
+          "end": 215,
+          "text": "Alice"
+        },
+        {
+          "start": 310,
+          "end": 315,
+          "text": "Alice"
+        },
+        {
+          "start": 602,
+          "end": 607,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

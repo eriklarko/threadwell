@@ -3,5 +3,50 @@
   "characters_mentioned": [
     "Footman",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Footman",
+      "aliases": [
+        "Footman"
+      ],
+
+      "mentions": [
+        {
+          "start": 24,
+          "end": 31,
+          "text": "Footman"
+        },
+        {
+          "start": 158,
+          "end": 165,
+          "text": "Footman"
+        },
+        {
+          "start": 284,
+          "end": 291,
+          "text": "Footman"
+        },
+        {
+          "start": 456,
+          "end": 463,
+          "text": "Footman"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 385,
+          "end": 390,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

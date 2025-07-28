@@ -5,5 +5,74 @@
     "Alice",
     "Fury",
     "mouse"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 60,
+          "end": 65,
+          "text": "Alice"
+        },
+        {
+          "start": 120,
+          "end": 125,
+          "text": "Alice"
+        },
+        {
+          "start": 837,
+          "end": 842,
+          "text": "Alice"
+        },
+        {
+          "start": 908,
+          "end": 913,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Mouse",
+      "aliases": [
+        "Mouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 247,
+          "end": 252,
+          "text": "Mouse"
+        },
+        {
+          "start": 828,
+          "end": 833,
+          "text": "Mouse"
+        }
+      ]
+    },
+    {
+      "primary_name": "Fury",
+      "aliases": [
+        "Fury"
+      ],
+
+      "mentions": [
+        {
+          "start": 333,
+          "end": 337,
+          "text": "Fury"
+        },
+        {
+          "start": 723,
+          "end": 727,
+          "text": "Fury"
+        }
+      ]
+    }
   ]
 }

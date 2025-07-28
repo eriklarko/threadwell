@@ -6,5 +6,35 @@
     "Mock Turtle",
     "Alice",
     "Shark"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "the Mock Turtle",
+      "aliases": [
+        "the Mock Turtle"
+      ],
+
+      "mentions": [
+        {
+          "start": 564,
+          "end": 579,
+          "text": "the Mock Turtle"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 617,
+          "end": 622,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

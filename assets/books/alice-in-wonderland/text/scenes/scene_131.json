@@ -12,5 +12,35 @@
     "Knave of Hearts",
     "King of Hearts",
     "Queen of Hearts"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 497,
+          "end": 502,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the Knave of Hearts",
+      "aliases": [
+        "the Knave of Hearts"
+      ],
+
+      "mentions": [
+        {
+          "start": 661,
+          "end": 680,
+          "text": "the Knave of Hearts"
+        }
+      ]
+    }
   ]
 }

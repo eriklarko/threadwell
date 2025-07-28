@@ -4,5 +4,59 @@
     "Hatter",
     "Queen",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 54,
+          "end": 60,
+          "text": "Hatter"
+        },
+        {
+          "start": 222,
+          "end": 228,
+          "text": "Hatter"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 72,
+          "end": 77,
+          "text": "Queen"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 187,
+          "end": 192,
+          "text": "Alice"
+        },
+        {
+          "start": 340,
+          "end": 345,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

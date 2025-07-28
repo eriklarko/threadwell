@@ -6,5 +6,68 @@
     "Lory",
     "Crab",
     "young Crab"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 42,
+          "end": 47,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Lory",
+      "aliases": [
+        "Lory"
+      ],
+
+      "mentions": [
+        {
+          "start": 240,
+          "end": 244,
+          "text": "Lory"
+        }
+      ]
+    },
+    {
+      "primary_name": "Crab",
+      "aliases": [
+        "Crab"
+      ],
+
+      "mentions": [
+        {
+          "start": 295,
+          "end": 299,
+          "text": "Crab"
+        },
+        {
+          "start": 458,
+          "end": 462,
+          "text": "Crab"
+        }
+      ]
+    },
+    {
+      "primary_name": "Ma",
+      "aliases": [
+        "Ma"
+      ],
+
+      "mentions": [
+        {
+          "start": 438,
+          "end": 440,
+          "text": "Ma"
+        }
+      ]
+    }
   ]
 }

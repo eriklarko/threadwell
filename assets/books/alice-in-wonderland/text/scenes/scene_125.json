@@ -5,5 +5,54 @@
     "Alice",
     "March Hare",
     "Hatter"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 208,
+          "end": 213,
+          "text": "Alice"
+        },
+        {
+          "start": 249,
+          "end": 254,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the March Hare",
+      "aliases": [
+        "the March Hare"
+      ],
+
+      "mentions": [
+        {
+          "start": 232,
+          "end": 246,
+          "text": "the March Hare"
+        }
+      ]
+    },
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 375,
+          "end": 381,
+          "text": "Hatter"
+        }
+      ]
+    }
   ]
 }

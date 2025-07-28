@@ -7,5 +7,45 @@
     "King",
     "Alice",
     "jury"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Bill",
+      "aliases": [
+        "Bill"
+      ],
+
+      "mentions": [
+        {
+          "start": 108,
+          "end": 112,
+          "text": "Bill"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 670,
+          "end": 675,
+          "text": "Alice"
+        },
+        {
+          "start": 795,
+          "end": 800,
+          "text": "Alice"
+        },
+        {
+          "start": 908,
+          "end": 913,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

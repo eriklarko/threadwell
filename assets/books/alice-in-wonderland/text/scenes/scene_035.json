@@ -4,5 +4,21 @@
     "Eaglet",
     "Dodo",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 390,
+          "end": 395,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

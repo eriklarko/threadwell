@@ -4,5 +4,45 @@
     "Alice",
     "Duchess",
     "Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 111,
+          "end": 116,
+          "text": "Alice"
+        },
+        {
+          "start": 269,
+          "end": 274,
+          "text": "Alice"
+        },
+        {
+          "start": 430,
+          "end": 435,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 467,
+          "end": 472,
+          "text": "Queen"
+        }
+      ]
+    }
   ]
 }

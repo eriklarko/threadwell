@@ -2,5 +2,21 @@
   "scene_text": "\u201cI wish I hadn\u2019t cried so much!\u201d said Alice, as she swam about, trying\nto find her way out. \u201cI shall be punished for it now, I suppose, by\nbeing drowned in my own tears! That _will_ be a queer thing, to be\nsure! However, everything is queer to-day.\u201d",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 38,
+          "end": 43,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

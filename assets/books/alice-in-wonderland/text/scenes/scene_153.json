@@ -3,5 +3,50 @@
   "characters_mentioned": [
     "Alice",
     "the Duchess"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Duchess",
+      "aliases": [
+        "Duchess"
+      ],
+
+      "mentions": [
+        {
+          "start": 120,
+          "end": 127,
+          "text": "Duchess"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 233,
+          "end": 238,
+          "text": "Alice"
+        },
+        {
+          "start": 404,
+          "end": 409,
+          "text": "Alice"
+        },
+        {
+          "start": 583,
+          "end": 588,
+          "text": "Alice"
+        },
+        {
+          "start": 829,
+          "end": 834,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

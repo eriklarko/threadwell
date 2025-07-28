@@ -3,5 +3,21 @@
   "characters_mentioned": [
     "Alice",
     "Fish-Footman"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 67,
+          "end": 72,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

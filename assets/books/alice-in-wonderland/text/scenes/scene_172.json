@@ -9,5 +9,21 @@
     "porpoise",
     "lobsters",
     "turtles"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 112,
+          "end": 117,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

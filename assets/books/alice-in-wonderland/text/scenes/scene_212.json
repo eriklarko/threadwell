@@ -5,5 +5,54 @@
     "King",
     "White Rabbit",
     "Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 39,
+          "end": 44,
+          "text": "Alice"
+        },
+        {
+          "start": 202,
+          "end": 207,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the\nWhite Rabbit",
+      "aliases": [
+        "the\nWhite Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 401,
+          "end": 417,
+          "text": "the\nWhite Rabbit"
+        }
+      ]
+    },
+    {
+      "primary_name": "the White Rabbit",
+      "aliases": [
+        "the White Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 552,
+          "end": 568,
+          "text": "the White Rabbit"
+        }
+      ]
+    }
   ]
 }

@@ -8,5 +8,40 @@
     "Duchess's cook",
     "Alice",
     "Duchess"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 37,
+          "end": 43,
+          "text": "Hatter"
+        },
+        {
+          "start": 200,
+          "end": 206,
+          "text": "Hatter"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 393,
+          "end": 398,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

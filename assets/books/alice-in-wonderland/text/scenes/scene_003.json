@@ -3,5 +3,31 @@
   "characters_mentioned": [
     "Alice",
     "White Rabbit"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 347,
+          "end": 352,
+          "text": "Alice"
+        },
+        {
+          "start": 719,
+          "end": 724,
+          "text": "Alice"
+        },
+        {
+          "start": 1060,
+          "end": 1065,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

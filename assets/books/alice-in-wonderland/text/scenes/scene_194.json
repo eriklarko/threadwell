@@ -6,5 +6,49 @@
     "Herald",
     "Queen of Hearts",
     "Knave of Hearts"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "the White Rabbit",
+      "aliases": [
+        "the White Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 55,
+          "end": 71,
+          "text": "the White Rabbit"
+        }
+      ]
+    },
+    {
+      "primary_name": "The Queen of Hearts",
+      "aliases": [
+        "The Queen of Hearts"
+      ],
+
+      "mentions": [
+        {
+          "start": 170,
+          "end": 189,
+          "text": "The Queen of Hearts"
+        }
+      ]
+    },
+    {
+      "primary_name": "Rabbit",
+      "aliases": [
+        "Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 390,
+          "end": 396,
+          "text": "Rabbit"
+        }
+      ]
+    }
   ]
 }

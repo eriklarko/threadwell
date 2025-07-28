@@ -6,5 +6,50 @@
     "Dodo",
     "Lory",
     "Eaglet"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 204,
+          "end": 209,
+          "text": "Alice"
+        },
+        {
+          "start": 654,
+          "end": 659,
+          "text": "Alice"
+        },
+        {
+          "start": 898,
+          "end": 903,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Lory",
+      "aliases": [
+        "Lory"
+      ],
+
+      "mentions": [
+        {
+          "start": 792,
+          "end": 796,
+          "text": "Lory"
+        },
+        {
+          "start": 964,
+          "end": 968,
+          "text": "Lory"
+        }
+      ]
+    }
   ]
 }

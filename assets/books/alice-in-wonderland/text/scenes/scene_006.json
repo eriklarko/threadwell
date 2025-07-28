@@ -2,5 +2,26 @@
   "scene_text": "Down, down, down. Would the fall _never_ come to an end? \u201cI wonder how\nmany miles I\u2019ve fallen by this time?\u201d she said aloud. \u201cI must be\ngetting somewhere near the centre of the earth. Let me see: that would\nbe four thousand miles down, I think\u2014\u201d (for, you see, Alice had learnt\nseveral things of this sort in her lessons in the schoolroom, and\nthough this was not a _very_ good opportunity for showing off her\nknowledge, as there was no one to listen to her, still it was good\npractice to say it over) \u201c\u2014yes, that\u2019s about the right distance\u2014but\nthen I wonder what Latitude or Longitude I\u2019ve got to?\u201d (Alice had no\nidea what Latitude was, or Longitude either, but thought they were nice\ngrand words to say.)",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 261,
+          "end": 266,
+          "text": "Alice"
+        },
+        {
+          "start": 601,
+          "end": 606,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

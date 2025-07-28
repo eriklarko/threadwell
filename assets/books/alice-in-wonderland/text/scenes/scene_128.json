@@ -6,5 +6,50 @@
     "Two",
     "Queen",
     "cook"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Five",
+      "aliases": [
+        "Five"
+      ],
+
+      "mentions": [
+        {
+          "start": 27,
+          "end": 31,
+          "text": "Five"
+        },
+        {
+          "start": 126,
+          "end": 130,
+          "text": "Five"
+        },
+        {
+          "start": 198,
+          "end": 202,
+          "text": "Five"
+        }
+      ]
+    },
+    {
+      "primary_name": "Seven",
+      "aliases": [
+        "Seven"
+      ],
+
+      "mentions": [
+        {
+          "start": 85,
+          "end": 90,
+          "text": "Seven"
+        },
+        {
+          "start": 365,
+          "end": 370,
+          "text": "Seven"
+        }
+      ]
+    }
   ]
 }

@@ -4,5 +4,64 @@
     "Alice",
     "Rabbit",
     "Mary Ann"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Mary Ann",
+      "aliases": [
+        "Mary Ann"
+      ],
+
+      "mentions": [
+        {
+          "start": 188,
+          "end": 196,
+          "text": "Mary Ann"
+        },
+        {
+          "start": 198,
+          "end": 206,
+          "text": "Mary Ann"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 311,
+          "end": 316,
+          "text": "Alice"
+        },
+        {
+          "start": 628,
+          "end": 633,
+          "text": "Alice"
+        },
+        {
+          "start": 702,
+          "end": 707,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Rabbit",
+      "aliases": [
+        "Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 480,
+          "end": 486,
+          "text": "Rabbit"
+        }
+      ]
+    }
   ]
 }

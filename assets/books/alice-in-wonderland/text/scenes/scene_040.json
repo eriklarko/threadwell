@@ -3,5 +3,45 @@
   "characters_mentioned": [
     "Mouse",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Mouse",
+      "aliases": [
+        "Mouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 25,
+          "end": 30,
+          "text": "Mouse"
+        },
+        {
+          "start": 228,
+          "end": 233,
+          "text": "Mouse"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 74,
+          "end": 79,
+          "text": "Alice"
+        },
+        {
+          "start": 340,
+          "end": 345,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

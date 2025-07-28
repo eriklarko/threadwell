@@ -4,5 +4,45 @@
     "Alice",
     "the Hatter",
     "the Dormouse"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 31,
+          "end": 36,
+          "text": "Alice"
+        },
+        {
+          "start": 158,
+          "end": 163,
+          "text": "Alice"
+        },
+        {
+          "start": 532,
+          "end": 537,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 112,
+          "end": 118,
+          "text": "Hatter"
+        }
+      ]
+    }
   ]
 }

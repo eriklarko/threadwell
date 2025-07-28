@@ -7,5 +7,69 @@
     "the Dormouse",
     "the jury",
     "the Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 72,
+          "end": 78,
+          "text": "Hatter"
+        },
+        {
+          "start": 552,
+          "end": 558,
+          "text": "Hatter"
+        },
+        {
+          "start": 687,
+          "end": 693,
+          "text": "Hatter"
+        },
+        {
+          "start": 820,
+          "end": 826,
+          "text": "Hatter"
+        }
+      ]
+    },
+    {
+      "primary_name": "the March Hare",
+      "aliases": [
+        "the March Hare"
+      ],
+
+      "mentions": [
+        {
+          "start": 89,
+          "end": 103,
+          "text": "the March Hare"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dormouse",
+      "aliases": [
+        "Dormouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 162,
+          "end": 170,
+          "text": "Dormouse"
+        },
+        {
+          "start": 281,
+          "end": 289,
+          "text": "Dormouse"
+        }
+      ]
+    }
   ]
 }

@@ -3,5 +3,40 @@
   "characters_mentioned": [
     "Alice",
     "Footman"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 21,
+          "end": 26,
+          "text": "Alice"
+        },
+        {
+          "start": 334,
+          "end": 339,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Footman",
+      "aliases": [
+        "Footman"
+      ],
+
+      "mentions": [
+        {
+          "start": 101,
+          "end": 108,
+          "text": "Footman"
+        }
+      ]
+    }
   ]
 }

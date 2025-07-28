@@ -3,5 +3,21 @@
   "characters_mentioned": [
     "Seven",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 115,
+          "end": 120,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

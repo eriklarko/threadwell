@@ -9,5 +9,49 @@
     "Gryphon",
     "Lizard",
     "Mock Turtle"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "the White Rabbit",
+      "aliases": [
+        "the White Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 38,
+          "end": 54,
+          "text": "the White Rabbit"
+        }
+      ]
+    },
+    {
+      "primary_name": "Mouse",
+      "aliases": [
+        "Mouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 81,
+          "end": 86,
+          "text": "Mouse"
+        }
+      ]
+    },
+    {
+      "primary_name": "the March Hare",
+      "aliases": [
+        "the March Hare"
+      ],
+
+      "mentions": [
+        {
+          "start": 178,
+          "end": 192,
+          "text": "the March Hare"
+        }
+      ]
+    }
   ]
 }

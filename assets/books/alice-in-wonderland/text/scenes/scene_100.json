@@ -3,5 +3,59 @@
   "characters_mentioned": [
     "Alice",
     "Cheshire Cat"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Cheshire Puss",
+      "aliases": [
+        "Cheshire Puss"
+      ],
+
+      "mentions": [
+        {
+          "start": 1,
+          "end": 14,
+          "text": "Cheshire Puss"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 181,
+          "end": 186,
+          "text": "Alice"
+        },
+        {
+          "start": 373,
+          "end": 378,
+          "text": "Alice"
+        },
+        {
+          "start": 472,
+          "end": 477,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Cat",
+      "aliases": [
+        "Cat"
+      ],
+
+      "mentions": [
+        {
+          "start": 335,
+          "end": 338,
+          "text": "Cat"
+        }
+      ]
+    }
   ]
 }

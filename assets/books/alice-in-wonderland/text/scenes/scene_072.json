@@ -4,5 +4,36 @@
     "Alice",
     "Caterpillar",
     "his father"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 284,
+          "end": 289,
+          "text": "Alice"
+        },
+        {
+          "start": 569,
+          "end": 574,
+          "text": "Alice"
+        },
+        {
+          "start": 687,
+          "end": 692,
+          "text": "Alice"
+        },
+        {
+          "start": 938,
+          "end": 943,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

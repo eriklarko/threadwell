@@ -4,5 +4,59 @@
     "Alice",
     "Gryphon",
     "Mock Turtle"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "the Mock Turtle",
+      "aliases": [
+        "the Mock Turtle"
+      ],
+
+      "mentions": [
+        {
+          "start": 24,
+          "end": 39,
+          "text": "the Mock Turtle"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 59,
+          "end": 64,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Soup",
+      "aliases": [
+        "Soup"
+      ],
+
+      "mentions": [
+        {
+          "start": 444,
+          "end": 448,
+          "text": "Soup"
+        },
+        {
+          "start": 481,
+          "end": 485,
+          "text": "Soup"
+        },
+        {
+          "start": 592,
+          "end": 596,
+          "text": "Soup"
+        }
+      ]
+    }
   ]
 }

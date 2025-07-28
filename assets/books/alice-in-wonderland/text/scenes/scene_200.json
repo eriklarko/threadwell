@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Hatter",
     "King"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 34,
+          "end": 40,
+          "text": "Hatter"
+        },
+        {
+          "start": 129,
+          "end": 135,
+          "text": "Hatter"
+        }
+      ]
+    }
   ]
 }

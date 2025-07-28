@@ -6,5 +6,59 @@
     "Gryphon",
     "White Rabbit",
     "Caterpillar"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 33,
+          "end": 38,
+          "text": "Alice"
+        },
+        {
+          "start": 243,
+          "end": 248,
+          "text": "Alice"
+        },
+        {
+          "start": 510,
+          "end": 515,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "William",
+      "aliases": [
+        "William"
+      ],
+
+      "mentions": [
+        {
+          "start": 897,
+          "end": 904,
+          "text": "William"
+        }
+      ]
+    },
+    {
+      "primary_name": "Mock",
+      "aliases": [
+        "Mock"
+      ],
+
+      "mentions": [
+        {
+          "start": 977,
+          "end": 981,
+          "text": "Mock"
+        }
+      ]
+    }
   ]
 }

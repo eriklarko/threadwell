@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Pigeon",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 95,
+          "end": 100,
+          "text": "Alice"
+        },
+        {
+          "start": 1141,
+          "end": 1146,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

@@ -2,5 +2,21 @@
   "scene_text": "\u201cYou ought to be ashamed of yourself,\u201d said Alice, \u201ca great girl like\nyou,\u201d (she might well say this), \u201cto go on crying in this way! Stop\nthis moment, I tell you!\u201d But she went on all the same, shedding\ngallons of tears, until there was a large pool all round her, about\nfour inches deep and reaching half down the hall.",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 44,
+          "end": 49,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

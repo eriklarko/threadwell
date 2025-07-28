@@ -4,5 +4,98 @@
     "Alice",
     "Mock Turtle",
     "Gryphon"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 52,
+          "end": 57,
+          "text": "Alice"
+        },
+        {
+          "start": 205,
+          "end": 210,
+          "text": "Alice"
+        },
+        {
+          "start": 348,
+          "end": 353,
+          "text": "Alice"
+        },
+        {
+          "start": 556,
+          "end": 561,
+          "text": "Alice"
+        },
+        {
+          "start": 834,
+          "end": 839,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the Mock Turtle",
+      "aliases": [
+        "the Mock Turtle"
+      ],
+
+      "mentions": [
+        {
+          "start": 126,
+          "end": 141,
+          "text": "the Mock Turtle"
+        },
+        {
+          "start": 497,
+          "end": 512,
+          "text": "the Mock Turtle"
+        },
+        {
+          "start": 740,
+          "end": 755,
+          "text": "The Mock Turtle"
+        },
+        {
+          "start": 1037,
+          "end": 1052,
+          "text": "the Mock Turtle"
+        }
+      ]
+    },
+    {
+      "primary_name": "Gryphon",
+      "aliases": [
+        "Gryphon"
+      ],
+
+      "mentions": [
+        {
+          "start": 615,
+          "end": 622,
+          "text": "Gryphon"
+        }
+      ]
+    },
+    {
+      "primary_name": "The Lobster Quadrille",
+      "aliases": [
+        "The Lobster Quadrille"
+      ],
+
+      "mentions": [
+        {
+          "start": 716,
+          "end": 737,
+          "text": "The Lobster Quadrille"
+        }
+      ]
+    }
   ]
 }

@@ -3,5 +3,41 @@
   "characters_mentioned": [
     "Bill",
     "the master"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Bill",
+      "aliases": [
+        "Bill"
+      ],
+
+      "mentions": [
+        {
+          "start": 243,
+          "end": 247,
+          "text": "Bill"
+        },
+        {
+          "start": 264,
+          "end": 268,
+          "text": "Bill"
+        },
+        {
+          "start": 441,
+          "end": 445,
+          "text": "Bill"
+        },
+        {
+          "start": 591,
+          "end": 595,
+          "text": "Bill"
+        },
+        {
+          "start": 711,
+          "end": 715,
+          "text": "Bill"
+        }
+      ]
+    }
   ]
 }

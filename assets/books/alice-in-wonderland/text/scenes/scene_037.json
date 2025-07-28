@@ -3,5 +3,40 @@
   "characters_mentioned": [
     "Alice",
     "Dodo"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 23,
+          "end": 28,
+          "text": "Alice"
+        },
+        {
+          "start": 285,
+          "end": 290,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dodo",
+      "aliases": [
+        "Dodo"
+      ],
+
+      "mentions": [
+        {
+          "start": 67,
+          "end": 71,
+          "text": "Dodo"
+        }
+      ]
+    }
   ]
 }

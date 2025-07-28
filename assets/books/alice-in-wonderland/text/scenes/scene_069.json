@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Father William",
     "the young man"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "William",
+      "aliases": [
+        "William"
+      ],
+
+      "mentions": [
+        {
+          "start": 21,
+          "end": 28,
+          "text": "William"
+        },
+        {
+          "start": 205,
+          "end": 212,
+          "text": "William"
+        }
+      ]
+    }
   ]
 }

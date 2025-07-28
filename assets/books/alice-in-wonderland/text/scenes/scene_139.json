@@ -5,5 +5,59 @@
     "Alice",
     "Queen",
     "soldiers"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Rabbit",
+      "aliases": [
+        "Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 34,
+          "end": 40,
+          "text": "Rabbit"
+        },
+        {
+          "start": 104,
+          "end": 110,
+          "text": "Rabbit"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 48,
+          "end": 53,
+          "text": "Alice"
+        },
+        {
+          "start": 438,
+          "end": 443,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 256,
+          "end": 261,
+          "text": "Queen"
+        }
+      ]
+    }
   ]
 }

@@ -7,5 +7,54 @@
     "The Knave",
     "three gardeners",
     "royal children"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 28,
+          "end": 33,
+          "text": "Alice"
+        },
+        {
+          "start": 243,
+          "end": 248,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Knave",
+      "aliases": [
+        "Knave"
+      ],
+
+      "mentions": [
+        {
+          "start": 457,
+          "end": 462,
+          "text": "Knave"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 551,
+          "end": 556,
+          "text": "Queen"
+        }
+      ]
+    }
   ]
 }

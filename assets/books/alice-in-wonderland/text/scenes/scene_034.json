@@ -4,5 +4,59 @@
     "The Mouse",
     "Alice",
     "The Dodo"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Edgar Atheling",
+      "aliases": [
+        "Edgar Atheling"
+      ],
+
+      "mentions": [
+        {
+          "start": 96,
+          "end": 110,
+          "text": "Edgar Atheling"
+        }
+      ]
+    },
+    {
+      "primary_name": "William",
+      "aliases": [
+        "William"
+      ],
+
+      "mentions": [
+        {
+          "start": 119,
+          "end": 126,
+          "text": "William"
+        },
+        {
+          "start": 152,
+          "end": 159,
+          "text": "William"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 291,
+          "end": 296,
+          "text": "Alice"
+        },
+        {
+          "start": 334,
+          "end": 339,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

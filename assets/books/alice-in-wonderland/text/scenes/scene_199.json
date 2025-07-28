@@ -6,5 +6,55 @@
     "King",
     "Dormouse",
     "jury"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 22,
+          "end": 28,
+          "text": "Hatter"
+        },
+        {
+          "start": 181,
+          "end": 187,
+          "text": "Hatter"
+        },
+        {
+          "start": 324,
+          "end": 330,
+          "text": "Hatter"
+        },
+        {
+          "start": 477,
+          "end": 483,
+          "text": "Hatter"
+        }
+      ]
+    },
+    {
+      "primary_name": "the March Hare",
+      "aliases": [
+        "the March Hare"
+      ],
+
+      "mentions": [
+        {
+          "start": 115,
+          "end": 129,
+          "text": "the March Hare"
+        },
+        {
+          "start": 208,
+          "end": 222,
+          "text": "the March Hare"
+        }
+      ]
+    }
   ]
 }

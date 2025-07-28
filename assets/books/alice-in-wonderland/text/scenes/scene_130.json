@@ -6,5 +6,26 @@
     "Seven",
     "Two",
     "The Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 26,
+          "end": 31,
+          "text": "Alice"
+        },
+        {
+          "start": 649,
+          "end": 654,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

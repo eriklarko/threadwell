@@ -2,5 +2,21 @@
   "scene_text": "There were doors all round the hall, but they were all locked; and when\nAlice had been all the way down one side and up the other, trying every\ndoor, she walked sadly down the middle, wondering how she was ever to\nget out again.",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 72,
+          "end": 77,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

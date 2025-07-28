@@ -3,5 +3,50 @@
   "characters_mentioned": [
     "Queen",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 58,
+          "end": 63,
+          "text": "Alice"
+        },
+        {
+          "start": 114,
+          "end": 119,
+          "text": "Alice"
+        },
+        {
+          "start": 271,
+          "end": 276,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Queen",
+      "aliases": [
+        "Queen"
+      ],
+
+      "mentions": [
+        {
+          "start": 222,
+          "end": 227,
+          "text": "Queen"
+        },
+        {
+          "start": 305,
+          "end": 310,
+          "text": "Queen"
+        }
+      ]
+    }
   ]
 }

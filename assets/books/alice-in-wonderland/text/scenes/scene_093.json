@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Alice",
     "Duchess"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 45,
+          "end": 50,
+          "text": "Alice"
+        },
+        {
+          "start": 391,
+          "end": 396,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

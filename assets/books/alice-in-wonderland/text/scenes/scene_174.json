@@ -3,5 +3,40 @@
   "characters_mentioned": [
     "Alice",
     "Mock Turtle"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 58,
+          "end": 63,
+          "text": "Alice"
+        },
+        {
+          "start": 262,
+          "end": 267,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the Mock Turtle",
+      "aliases": [
+        "the Mock Turtle"
+      ],
+
+      "mentions": [
+        {
+          "start": 196,
+          "end": 211,
+          "text": "the Mock Turtle"
+        }
+      ]
+    }
   ]
 }

@@ -5,5 +5,68 @@
     "Dormouse",
     "March Hare",
     "Hatter"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 36,
+          "end": 41,
+          "text": "Alice"
+        },
+        {
+          "start": 390,
+          "end": 395,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dormouse",
+      "aliases": [
+        "Dormouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 130,
+          "end": 138,
+          "text": "Dormouse"
+        }
+      ]
+    },
+    {
+      "primary_name": "the March Hare",
+      "aliases": [
+        "the March Hare"
+      ],
+
+      "mentions": [
+        {
+          "start": 347,
+          "end": 361,
+          "text": "the March Hare"
+        }
+      ]
+    },
+    {
+      "primary_name": "Hatter",
+      "aliases": [
+        "Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 433,
+          "end": 439,
+          "text": "Hatter"
+        }
+      ]
+    }
   ]
 }

@@ -4,5 +4,21 @@
     "Magpie",
     "Canary",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 401,
+          "end": 406,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

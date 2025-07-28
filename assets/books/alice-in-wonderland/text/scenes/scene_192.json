@@ -4,5 +4,31 @@
     "Alice",
     "White Rabbit",
     "King"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 17,
+          "end": 22,
+          "text": "Alice"
+        },
+        {
+          "start": 231,
+          "end": 236,
+          "text": "Alice"
+        },
+        {
+          "start": 574,
+          "end": 579,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

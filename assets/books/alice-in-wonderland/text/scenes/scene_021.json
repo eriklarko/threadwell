@@ -3,5 +3,45 @@
   "characters_mentioned": [
     "Alice",
     "Mabel"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 52,
+          "end": 57,
+          "text": "Alice"
+        },
+        {
+          "start": 619,
+          "end": 624,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Mabel",
+      "aliases": [
+        "Mabel"
+      ],
+
+      "mentions": [
+        {
+          "start": 123,
+          "end": 128,
+          "text": "Mabel"
+        },
+        {
+          "start": 319,
+          "end": 324,
+          "text": "Mabel"
+        }
+      ]
+    }
   ]
 }

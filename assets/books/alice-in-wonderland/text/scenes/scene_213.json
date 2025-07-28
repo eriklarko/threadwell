@@ -7,5 +7,21 @@
     "one of the jurymen",
     "another of the jurymen",
     "the jury"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Knave",
+      "aliases": [
+        "Knave"
+      ],
+
+      "mentions": [
+        {
+          "start": 680,
+          "end": 685,
+          "text": "Knave"
+        }
+      ]
+    }
   ]
 }

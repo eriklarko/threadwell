@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Alice",
     "the puppy"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 246,
+          "end": 251,
+          "text": "Alice"
+        },
+        {
+          "start": 474,
+          "end": 479,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

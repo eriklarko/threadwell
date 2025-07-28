@@ -5,5 +5,21 @@
     "Alice",
     "cook",
     "baby"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 63,
+          "end": 68,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

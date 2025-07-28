@@ -2,5 +2,21 @@
   "scene_text": "It sounded an excellent plan, no doubt, and very neatly and simply\narranged; the only difficulty was, that she had not the smallest idea\nhow to set about it; and while she was peering about anxiously among\nthe trees, a little sharp bark just over her head made her look up in a\ngreat hurry.\n\nAn enormous puppy was looking down at her with large round eyes, and\nfeebly stretching out one paw, trying to touch her. \u201cPoor little\nthing!\u201d said Alice, in a coaxing tone, and she tried hard to whistle to\nit; but she was terribly frightened all the time at the thought that it\nmight be hungry, in which case it would be very likely to eat her up in\nspite of all her coaxing.",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 439,
+          "end": 444,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

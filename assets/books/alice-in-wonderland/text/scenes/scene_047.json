@@ -6,5 +6,45 @@
     "Dinah",
     "nurse",
     "mouse"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 22,
+          "end": 27,
+          "text": "Alice"
+        },
+        {
+          "start": 200,
+          "end": 205,
+          "text": "Alice"
+        },
+        {
+          "start": 359,
+          "end": 364,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dinah",
+      "aliases": [
+        "Dinah"
+      ],
+
+      "mentions": [
+        {
+          "start": 391,
+          "end": 396,
+          "text": "Dinah"
+        }
+      ]
+    }
   ]
 }

@@ -4,5 +4,64 @@
     "Alice",
     "Lory",
     "Dinah"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Dinah",
+      "aliases": [
+        "Dinah"
+      ],
+
+      "mentions": [
+        {
+          "start": 18,
+          "end": 23,
+          "text": "Dinah"
+        },
+        {
+          "start": 136,
+          "end": 141,
+          "text": "Dinah"
+        },
+        {
+          "start": 272,
+          "end": 277,
+          "text": "Dinah"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 49,
+          "end": 54,
+          "text": "Alice"
+        },
+        {
+          "start": 200,
+          "end": 205,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Lory",
+      "aliases": [
+        "Lory"
+      ],
+
+      "mentions": [
+        {
+          "start": 193,
+          "end": 197,
+          "text": "Lory"
+        }
+      ]
+    }
   ]
 }

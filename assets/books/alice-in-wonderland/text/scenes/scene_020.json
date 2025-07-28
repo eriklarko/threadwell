@@ -3,5 +3,40 @@
   "characters_mentioned": [
     "Ada",
     "Mabel"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Ada",
+      "aliases": [
+        "Ada"
+      ],
+
+      "mentions": [
+        {
+          "start": 18,
+          "end": 21,
+          "text": "Ada"
+        }
+      ]
+    },
+    {
+      "primary_name": "Mabel",
+      "aliases": [
+        "Mabel"
+      ],
+
+      "mentions": [
+        {
+          "start": 140,
+          "end": 145,
+          "text": "Mabel"
+        },
+        {
+          "start": 703,
+          "end": 708,
+          "text": "Mabel"
+        }
+      ]
+    }
   ]
 }

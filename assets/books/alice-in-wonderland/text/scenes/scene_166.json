@@ -4,5 +4,79 @@
     "Alice",
     "Mock Turtle",
     "Gryphon"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 26,
+          "end": 31,
+          "text": "Alice"
+        },
+        {
+          "start": 244,
+          "end": 249,
+          "text": "Alice"
+        },
+        {
+          "start": 435,
+          "end": 440,
+          "text": "Alice"
+        },
+        {
+          "start": 590,
+          "end": 595,
+          "text": "Alice"
+        },
+        {
+          "start": 1052,
+          "end": 1057,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the Mock Turtle",
+      "aliases": [
+        "the Mock Turtle"
+      ],
+
+      "mentions": [
+        {
+          "start": 673,
+          "end": 688,
+          "text": "the Mock Turtle"
+        },
+        {
+          "start": 757,
+          "end": 772,
+          "text": "the Mock Turtle"
+        }
+      ]
+    },
+    {
+      "primary_name": "Drawling",
+      "aliases": [
+        "Drawling"
+      ],
+
+      "mentions": [
+        {
+          "start": 878,
+          "end": 886,
+          "text": "Drawling"
+        },
+        {
+          "start": 891,
+          "end": 899,
+          "text": "Drawling"
+        }
+      ]
+    }
   ]
 }

@@ -5,5 +5,88 @@
     "Alice",
     "Gryphon",
     "Tortoise"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Tortoise",
+      "aliases": [
+        "Tortoise"
+      ],
+
+      "mentions": [
+        {
+          "start": 193,
+          "end": 201,
+          "text": "Tortoise"
+        },
+        {
+          "start": 227,
+          "end": 235,
+          "text": "Tortoise"
+        },
+        {
+          "start": 285,
+          "end": 293,
+          "text": "Tortoise"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 256,
+          "end": 261,
+          "text": "Alice"
+        },
+        {
+          "start": 517,
+          "end": 522,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the Mock Turtle",
+      "aliases": [
+        "the Mock Turtle"
+      ],
+
+      "mentions": [
+        {
+          "start": 322,
+          "end": 337,
+          "text": "the Mock Turtle"
+        },
+        {
+          "start": 591,
+          "end": 606,
+          "text": "the Mock Turtle"
+        }
+      ]
+    },
+    {
+      "primary_name": "Gryphon",
+      "aliases": [
+        "Gryphon"
+      ],
+
+      "mentions": [
+        {
+          "start": 459,
+          "end": 466,
+          "text": "Gryphon"
+        },
+        {
+          "start": 575,
+          "end": 582,
+          "text": "Gryphon"
+        }
+      ]
+    }
   ]
 }

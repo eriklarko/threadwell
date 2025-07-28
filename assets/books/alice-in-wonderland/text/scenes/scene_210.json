@@ -5,5 +5,54 @@
     "King",
     "White Rabbit",
     "jury"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 25,
+          "end": 30,
+          "text": "Alice"
+        },
+        {
+          "start": 587,
+          "end": 592,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "White",
+      "aliases": [
+        "White"
+      ],
+
+      "mentions": [
+        {
+          "start": 164,
+          "end": 169,
+          "text": "White"
+        }
+      ]
+    },
+    {
+      "primary_name": "Rabbit",
+      "aliases": [
+        "Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 170,
+          "end": 176,
+          "text": "Rabbit"
+        }
+      ]
+    }
   ]
 }

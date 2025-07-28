@@ -5,5 +5,21 @@
     "King",
     "Knave",
     "jury"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 42,
+          "end": 47,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

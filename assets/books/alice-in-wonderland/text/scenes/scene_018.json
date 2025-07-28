@@ -4,5 +4,68 @@
     "Alice",
     "White Rabbit",
     "Duchess"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "White",
+      "aliases": [
+        "White"
+      ],
+
+      "mentions": [
+        {
+          "start": 133,
+          "end": 138,
+          "text": "White"
+        }
+      ]
+    },
+    {
+      "primary_name": "Rabbit",
+      "aliases": [
+        "Rabbit"
+      ],
+
+      "mentions": [
+        {
+          "start": 139,
+          "end": 145,
+          "text": "Rabbit"
+        },
+        {
+          "start": 569,
+          "end": 575,
+          "text": "Rabbit"
+        }
+      ]
+    },
+    {
+      "primary_name": "Duchess",
+      "aliases": [
+        "Duchess"
+      ],
+
+      "mentions": [
+        {
+          "start": 347,
+          "end": 354,
+          "text": "Duchess"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 407,
+          "end": 412,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

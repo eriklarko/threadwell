@@ -4,5 +4,135 @@
     "Mouse",
     "Lory",
     "Duck"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Mouse",
+      "aliases": [
+        "Mouse"
+      ],
+
+      "mentions": [
+        {
+          "start": 17,
+          "end": 22,
+          "text": "Mouse"
+        },
+        {
+          "start": 444,
+          "end": 449,
+          "text": "Mouse"
+        },
+        {
+          "start": 561,
+          "end": 566,
+          "text": "Mouse"
+        }
+      ]
+    },
+    {
+      "primary_name": "William\nthe Conqueror",
+      "aliases": [
+        "William\nthe Conqueror"
+      ],
+
+      "mentions": [
+        {
+          "start": 134,
+          "end": 155,
+          "text": "William\nthe Conqueror"
+        }
+      ]
+    },
+    {
+      "primary_name": "Edwin",
+      "aliases": [
+        "Edwin"
+      ],
+
+      "mentions": [
+        {
+          "start": 318,
+          "end": 323,
+          "text": "Edwin"
+        },
+        {
+          "start": 582,
+          "end": 587,
+          "text": "Edwin"
+        }
+      ]
+    },
+    {
+      "primary_name": "Morcar",
+      "aliases": [
+        "Morcar"
+      ],
+
+      "mentions": [
+        {
+          "start": 328,
+          "end": 334,
+          "text": "Morcar"
+        },
+        {
+          "start": 592,
+          "end": 598,
+          "text": "Morcar"
+        }
+      ]
+    },
+    {
+      "primary_name": "Lory",
+      "aliases": [
+        "Lory"
+      ],
+
+      "mentions": [
+        {
+          "start": 392,
+          "end": 396,
+          "text": "Lory"
+        },
+        {
+          "start": 516,
+          "end": 520,
+          "text": "Lory"
+        }
+      ]
+    },
+    {
+      "primary_name": "Stigand",
+      "aliases": [
+        "Stigand"
+      ],
+
+      "mentions": [
+        {
+          "start": 664,
+          "end": 671,
+          "text": "Stigand"
+        }
+      ]
+    },
+    {
+      "primary_name": "Duck",
+      "aliases": [
+        "Duck"
+      ],
+
+      "mentions": [
+        {
+          "start": 761,
+          "end": 765,
+          "text": "Duck"
+        },
+        {
+          "start": 925,
+          "end": 929,
+          "text": "Duck"
+        }
+      ]
+    }
   ]
 }

@@ -4,5 +4,45 @@
     "Alice",
     "Mouse",
     "Dinah"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 26,
+          "end": 31,
+          "text": "Alice"
+        },
+        {
+          "start": 220,
+          "end": 225,
+          "text": "Alice"
+        },
+        {
+          "start": 493,
+          "end": 498,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dinah",
+      "aliases": [
+        "Dinah"
+      ],
+
+      "mentions": [
+        {
+          "start": 118,
+          "end": 123,
+          "text": "Dinah"
+        }
+      ]
+    }
   ]
 }

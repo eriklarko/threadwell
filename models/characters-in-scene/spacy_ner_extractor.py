@@ -19,7 +19,6 @@ class Mention:
 class Character:
     primary_name: str
     aliases: List[str]
-    first_appearance: int
     mentions: List[Mention]
 
 
@@ -70,7 +69,7 @@ def extract_characters_from_scene(text: str) -> List[Character]:
         print(f"  Entity {cid} ('{ent.text}') at tokens {ent.start_char}-{ent.end_char}")
 
         if cid not in characters:
-            characters[cid] = Character(ent.text, [ent.text], ent.start_char, [])
+            characters[cid] = Character(ent.text, [ent.text], [])
 
         mention = Mention(ent.start_char, ent.end_char, ent.text)
         characters[cid].mentions.append(mention)

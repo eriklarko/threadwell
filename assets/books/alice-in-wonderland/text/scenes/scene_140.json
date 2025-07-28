@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Alice",
     "Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 21,
+          "end": 26,
+          "text": "Alice"
+        },
+        {
+          "start": 826,
+          "end": 831,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

@@ -4,5 +4,26 @@
     "the Lizard",
     "the King",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 408,
+          "end": 413,
+          "text": "Alice"
+        },
+        {
+          "start": 432,
+          "end": 437,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

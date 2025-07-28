@@ -4,5 +4,40 @@
     "White Rabbit",
     "Alice",
     "The Duchess"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Duchess",
+      "aliases": [
+        "Duchess"
+      ],
+
+      "mentions": [
+        {
+          "start": 212,
+          "end": 219,
+          "text": "Duchess"
+        },
+        {
+          "start": 225,
+          "end": 232,
+          "text": "Duchess"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 375,
+          "end": 380,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

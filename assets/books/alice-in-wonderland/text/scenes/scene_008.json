@@ -3,5 +3,55 @@
   "characters_mentioned": [
     "Alice",
     "Dinah"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 51,
+          "end": 56,
+          "text": "Alice"
+        },
+        {
+          "start": 417,
+          "end": 422,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "Dinah",
+      "aliases": [
+        "Dinah"
+      ],
+
+      "mentions": [
+        {
+          "start": 139,
+          "end": 144,
+          "text": "Dinah"
+        },
+        {
+          "start": 216,
+          "end": 221,
+          "text": "Dinah"
+        },
+        {
+          "start": 779,
+          "end": 784,
+          "text": "Dinah"
+        },
+        {
+          "start": 826,
+          "end": 831,
+          "text": "Dinah"
+        }
+      ]
+    }
   ]
 }

@@ -5,5 +5,26 @@
     "King",
     "Alice",
     "Queen"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 124,
+          "end": 129,
+          "text": "Alice"
+        },
+        {
+          "start": 177,
+          "end": 182,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

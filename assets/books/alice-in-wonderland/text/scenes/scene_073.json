@@ -3,5 +3,21 @@
   "characters_mentioned": [
     "Caterpillar",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 176,
+          "end": 181,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

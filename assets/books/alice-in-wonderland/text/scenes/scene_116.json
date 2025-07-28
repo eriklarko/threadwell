@@ -6,5 +6,40 @@
     "The March Hare",
     "The Queen of Hearts",
     "The Dormouse"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 32,
+          "end": 37,
+          "text": "Alice"
+        },
+        {
+          "start": 427,
+          "end": 432,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "the Queen of Hearts",
+      "aliases": [
+        "the Queen of Hearts"
+      ],
+
+      "mentions": [
+        {
+          "start": 257,
+          "end": 276,
+          "text": "the Queen of Hearts"
+        }
+      ]
+    }
   ]
 }

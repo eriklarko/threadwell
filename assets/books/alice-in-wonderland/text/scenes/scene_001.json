@@ -2,5 +2,35 @@
   "scene_text": "*** START OF THE PROJECT GUTENBERG EBOOK 11 ***\n\n[Illustration]\n\n\n\n\nAlice\u2019s Adventures in Wonderland\n\nby Lewis Carroll\n\nTHE MILLENNIUM FULCRUM EDITION 3.0\n\nContents\n\n CHAPTER I.     Down the Rabbit-Hole\n CHAPTER II.    The Pool of Tears\n CHAPTER III.   A Caucus-Race and a Long Tale\n CHAPTER IV.    The Rabbit Sends in a Little Bill\n CHAPTER V.     Advice from a Caterpillar\n CHAPTER VI.    Pig and Pepper\n CHAPTER VII.   A Mad Tea-Party\n CHAPTER VIII.  The Queen\u2019s Croquet-Ground\n CHAPTER IX.    The Mock Turtle\u2019s Story\n CHAPTER X.     The Lobster Quadrille\n CHAPTER XI.    Who Stole the Tarts?\n CHAPTER XII.   Alice\u2019s Evidence",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Lewis Carroll",
+      "aliases": [
+        "Lewis Carroll"
+      ],
+
+      "mentions": [
+        {
+          "start": 105,
+          "end": 118,
+          "text": "Lewis Carroll"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 612,
+          "end": 617,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

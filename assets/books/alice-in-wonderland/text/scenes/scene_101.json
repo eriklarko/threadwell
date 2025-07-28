@@ -5,5 +5,40 @@
     "the Cat",
     "Hatter",
     "March Hare"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 77,
+          "end": 82,
+          "text": "Alice"
+        },
+        {
+          "start": 427,
+          "end": 432,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "a Hatter",
+      "aliases": [
+        "a Hatter"
+      ],
+
+      "mentions": [
+        {
+          "start": 262,
+          "end": 270,
+          "text": "a Hatter"
+        }
+      ]
+    }
   ]
 }

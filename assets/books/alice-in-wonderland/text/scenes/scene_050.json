@@ -2,5 +2,26 @@
   "scene_text": "\u201cBut then,\u201d thought Alice, \u201cshall I _never_ get any older than I am\nnow? That\u2019ll be a comfort, one way\u2014never to be an old woman\u2014but\nthen\u2014always to have lessons to learn! Oh, I shouldn\u2019t like _that!_\u201d\n\n\u201cOh, you foolish Alice!\u201d she answered herself. \u201cHow can you learn\nlessons in here? Why, there\u2019s hardly room for _you_, and no room at all\nfor any lesson-books!\u201d",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 20,
+          "end": 25,
+          "text": "Alice"
+        },
+        {
+          "start": 218,
+          "end": 223,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

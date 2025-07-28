@@ -4,5 +4,26 @@
     "King",
     "Alice",
     "Gryphon"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 244,
+          "end": 249,
+          "text": "Alice"
+        },
+        {
+          "start": 738,
+          "end": 743,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

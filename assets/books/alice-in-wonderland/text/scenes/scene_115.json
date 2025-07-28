@@ -4,5 +4,21 @@
     "March Hare",
     "Alice",
     "Hatter"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 108,
+          "end": 113,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

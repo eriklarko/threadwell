@@ -3,5 +3,26 @@
   "characters_mentioned": [
     "Alice",
     "the Cat"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "Alice"
+        },
+        {
+          "start": 281,
+          "end": 286,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

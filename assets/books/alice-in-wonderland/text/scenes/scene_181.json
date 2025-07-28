@@ -3,5 +3,35 @@
   "characters_mentioned": [
     "Gryphon",
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Gryphon",
+      "aliases": [
+        "Gryphon"
+      ],
+
+      "mentions": [
+        {
+          "start": 67,
+          "end": 74,
+          "text": "Gryphon"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 151,
+          "end": 156,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

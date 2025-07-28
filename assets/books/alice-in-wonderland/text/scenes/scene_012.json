@@ -2,5 +2,26 @@
   "scene_text": "It was all very well to say \u201cDrink me,\u201d but the wise little Alice was\nnot going to do _that_ in a hurry. \u201cNo, I\u2019ll look first,\u201d she said,\n\u201cand see whether it\u2019s marked \u2018_poison_\u2019 or not\u201d; for she had read\nseveral nice little histories about children who had got burnt, and\neaten up by wild beasts and other unpleasant things, all because they\n_would_ not remember the simple rules their friends had taught them:\nsuch as, that a red-hot poker will burn you if you hold it too long;\nand that if you cut your finger _very_ deeply with a knife, it usually\nbleeds; and she had never forgotten that, if you drink much from a\nbottle marked \u201cpoison,\u201d it is almost certain to disagree with you,\nsooner or later.\n\nHowever, this bottle was _not_ marked \u201cpoison,\u201d so Alice ventured to\ntaste it, and finding it very nice, (it had, in fact, a sort of mixed\nflavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and\nhot buttered toast,) she very soon finished it off.",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 60,
+          "end": 65,
+          "text": "Alice"
+        },
+        {
+          "start": 754,
+          "end": 759,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }

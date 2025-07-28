@@ -4,5 +4,54 @@
     "Cat",
     "Alice",
     "March Hare"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Cat",
+      "aliases": [
+        "Cat"
+      ],
+
+      "mentions": [
+        {
+          "start": 31,
+          "end": 34,
+          "text": "Cat"
+        },
+        {
+          "start": 476,
+          "end": 479,
+          "text": "Cat"
+        }
+      ]
+    },
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 57,
+          "end": 62,
+          "text": "Alice"
+        }
+      ]
+    },
+    {
+      "primary_name": "again",
+      "aliases": [
+        "again"
+      ],
+
+      "mentions": [
+        {
+          "start": 480,
+          "end": 485,
+          "text": "again"
+        }
+      ]
+    }
   ]
 }

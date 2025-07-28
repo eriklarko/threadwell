@@ -2,5 +2,21 @@
   "scene_text": "\u201cWell!\u201d thought Alice to herself, \u201cafter such a fall as this, I shall\nthink nothing of tumbling down stairs! How brave they\u2019ll all think me\nat home! Why, I wouldn\u2019t say anything about it, even if I fell off the\ntop of the house!\u201d (Which was very likely true.)",
   "characters_mentioned": [
     "Alice"
+  ],
+  "characters_present": [
+    {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+
+      "mentions": [
+        {
+          "start": 16,
+          "end": 21,
+          "text": "Alice"
+        }
+      ]
+    }
   ]
 }
