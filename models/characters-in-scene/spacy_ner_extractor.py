@@ -13,7 +13,6 @@ class Mention:
     start: int
     end: int
     text: str
-    context: str
 
 
 @dataclass
@@ -73,9 +72,7 @@ def extract_characters_from_scene(text: str) -> List[Character]:
         if cid not in characters:
             characters[cid] = Character(ent.text, [ent.text], ent.start_char, [])
 
-        # TODO: this should be the whole sentence actually?
-        context = text[max(ent.start_char-5, 0):ent.end_char+5]
-        mention = Mention(ent.start_char, ent.end_char, ent.text, context)
+        mention = Mention(ent.start_char, ent.end_char, ent.text)
         characters[cid].mentions.append(mention)
 
     print(f"Extracted {len(characters)} characters from scene")

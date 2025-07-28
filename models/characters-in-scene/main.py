@@ -1,5 +1,6 @@
 import sys
 import asyncio
+from dataclasses import asdict
 from fileutils import validate_and_load_scene_file, get_json_files, update_scene
 import dspy_llm_extractor
 import spacy_ner_extractor
@@ -19,13 +20,14 @@ async def process_single_scene(path_to_scene_file):
         print("Extracting characters mentioned in scene using dspy...")
         characters = await dspy_llm_extractor.extract_characters_from_scene(scene_data["scene_text"])
         print(f"Found characters: {characters}")
-        scene_data["characters_mentioned"] = characters
+        scene_data["characters_mentioned"] = [asdict(char) for char in characters]
 
     if "characters_present" not in scene_data:
         print("Extracting characters present in scene using spaCy...")
-        c2 = await spacy_ner_extractor.extract_characters_from_scene(scene_data["scene_text"])
-        print(f"Found characters: {c2}")
-        scene_data["characters_present"] = c2
+        characters = spacy_ner_extractor.extract_characters_from_scene(scene_data["scene_text"])
+        print(f"Found characters: {characters}")
+        # Convert Character dataclass objects to dictionaries for JSON serialization
+        scene_data["characters_present"] = [asdict(char) for char in characters]
 
     # Save the results back to the file
     update_scene(path_to_scene_file, scene_data)
