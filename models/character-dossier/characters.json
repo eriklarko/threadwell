@@ -1,0 +1,26 @@
+{
+  "book_metadata": {},
+  "characters": {
+    "alice": {
+      "primary_name": "Alice",
+      "aliases": [
+        "Alice"
+      ],
+      "first_appearance": 34,
+      "mentions": [
+        {
+          "start": 34,
+          "end": 39,
+          "text": "Alice",
+          "context": "le\n\n\nAlice was "
+        },
+        {
+          "start": 294,
+          "end": 299,
+          "text": "Alice",
+          "context": "ught Alice\n\u201cwit"
+        }
+      ]
+    }
+  }
+}

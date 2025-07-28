@@ -1,0 +1,18 @@
+[project]
+name = "character-dossier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.2.1",
+    "spacy>=3.7.5",
+    "spacy-experimental>=0.6.4",
+    "numpy==1.26.4",
+    "spacy-lookups-data>=1.0.5",
+]
+
+[dependency-groups]
+dev = [
+    "pip>=25.1.1",
+]

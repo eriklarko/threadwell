@@ -25,3 +25,4 @@ assets/books/*/processed/**
 !assets/books/*/text/*.md
 !assets/books/*/supplementary/*.json
 !assets/books/*/supplementary/*.md
+*.secret

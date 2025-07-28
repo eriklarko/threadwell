@@ -1,63 +1,59 @@
-# BookNLP Character Tracking Implementation
+# Character Tracking System Requirements
 
 ## Overview
-Use BookNLP to process entire audiobooks and provide spoiler-free character information based on user reading progress.
+Build a CLI tool to process books and generate spoiler-free character descriptions based on reading progress using modern spaCy with experimental coreference resolution.
 
-## Architecture
+## Core Components
 
-1. **Book Ingestion**: Process complete book text with BookNLP
-2. **Data Loading**: Parse BookNLP output files into queryable format
-3. **Position Filtering**: Return character data up to user's current position
-4. **Description Generation**: Summarize character history from filtered mentions
+### Text Processing Pipeline
+- **Input**: scene text + characters mentioned in scene + reading position
+- **Position Filtering**: Return character data up to specified position only
+- **Summarization**: Take a list of scenes and summarize them from one character's point of view
 
-## BookNLP Processing
-
-docs: https://github.com/booknlp/booknlp
-docs: https://booknlp.pythonhumanities.com/03_files.html
-guide: https://booknlp.pythonhumanities.com/02_starting.html
-guide: https://booknlp.pythonhumanities.com/04_character_analysis.html
-guide: https://booknlp.pythonhumanities.com/05_events.html
-
-## Data Models
-
-### Character Registry
-```python
-@dataclass
-class Character:
-    id: str
-    primary_name: str
-    aliases: List[str]
-    first_appearance: int  # token position
-    mentions: List[Mention]
-
-@dataclass
-class Mention:
-    start_token: int
-    end_token: int
-    text: str
-    context: str  # surrounding text
+### CLI Interface
+```bash
+# Get character info at specific position
+python character_tracker.py query /path/to/scenes/ --character "Gandalf" --max-scene 10 # user read up to scene 10
+Gandalf is a tall human dressed in Grey. He's currently in the Shire watching fireworks.
 ```
 
-## Position-Based Filtering
+## Implementation Requirements
 
-### Core Logic
+### Position-Based Filtering
 ```python
-def get_safe_character_data(self, char_id: str, user_position: int):
-    # Get all mentions before user's position
-    safe_mentions = [
-        m for m in character.mentions
-        if m.start_token <= user_position
-    ]
+def get_safe_mentions(character_id: str, user_position: int) -> Iterable[Mention]:
+    # Only return mentions before user's current position
+    # start with the most recent scene and move back
+    for i in range(user_position, 0, -1):
+        if character_id in self.scenes_by_reading_order[i].affected_characters:
+            yield scene
 
-    # Generate summary from safe mentions only
-    return self.summarize_character(safe_mentions)
+def get_safe_character_summary(self, char_id: str, user_position: int) -> str:
+    safe_mentions = list(self.get_safe_mentions(char_id, user_position))
+    # TODO: Do we need to do more parsing here to extract only the parts that actually affect the character? Probably yes
+
+    # TODO: ask LM to generate summary
+    return self.language_model.summarize(safe_mentions)
 ```
-## Implementation Strategy
 
-### Phase 1: Run BookNLP
-- Process books with BookNLP offline
+### Character Summary Generation
+- Extract key actions/events from mention contexts
+- Build chronological narrative from safe mentions
+- Identify relationships from co-occurrence patterns
+- Generate natural language summary
 
-### Phase 2: Parse BookNLP output
-- Load entity/coref data into database
-- Implement position-based filtering
-- Generate natural language summaries
+## CLI Commands
+
+### Query Command
+```python
+@click.command()
+@click.option('--scene-dir', required=True, help='path to scene jsons')
+@click.option('--character', required=True, help='Character name')
+@click.option('--position', type=int, required=True, help='the index of the scene to use as context cut off (omg thats obtuse)')
+def query(book, character, position):
+    """Get character history up to position"""
+```
+
+## Error Handling
+- Graceful handling of malformed text
+- Provide helpful CLI error messages

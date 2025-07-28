@@ -3,8 +3,18 @@ name = "characters-in-scene"
 version = "0.1.0"
 description = "DSPy program to extract characters from book scenes"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = "==3.11.13"
 dependencies = [
-    "dspy",
+    "dspy>=2.6",
     "pytest",
+    "click>=8.2.1",
+    "spacy>=3.7.5",
+    "spacy-experimental>=0.6.4",
+    "numpy==1.26.4",
+    "spacy-lookups-data>=1.0.5",
+]
+
+[dependency-groups]
+dev = [
+    "pip>=25.1.1",
 ]
